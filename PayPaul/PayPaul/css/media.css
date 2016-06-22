@@ -1,0 +1,216 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header-top form {
+		margin-left: 400px;
+	}
+	.artice-simplicity,
+	.artice-design,
+	.artice-future {
+		display: none;
+	}
+	.main h3, 
+	.main p, 
+	.main article a {
+		text-align: center;
+	}
+	.main a {
+		margin-bottom: 10px;
+	}
+	article {
+		border-bottom: 1px solid #eee;
+	}
+	.main article a {
+		margin-left: 45%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.top-nav  ul  {
+		display: block;
+		margin-left: 20px;
+	}
+	.top-nav  li  {
+		display: block;
+	}
+	.top-nav a {
+		border-bottom: 1px solid #5b5a5e;
+		line-height: 92px;
+	}
+	.top-button {
+		display: none;
+	}
+	.banner {
+		background: url(../img/banner-xs.png) center no-repeat;
+	}
+	.banner-text h2 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.banner-text h4 {
+		text-align: center;
+	}
+
+	.banner-text .button-1,
+	.banner-text .button-2 {
+	   margin-left: 20%;
+	}
+}
+
+@media only screen and (max-width : 580px) {
+	.top-nav  ul  {
+		margin-left: 40px;
+	}
+	.header-top form {
+		margin-left: 150px;
+	}
+	.banner-text .button-1,
+	.banner-text .button-2 {
+	   margin-left: 10%;
+	}
+	.banner {
+		height: 410px;
+	}
+	.banner-text .button-2 p {
+		display: none;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top-nav {
+		height: 60px;
+	}
+	.top-nav a {
+		line-height: 46px;
+	}
+	.top-button {
+		position: absolute;
+		display: block;
+		left: 10px;
+	}
+	.header-top form {
+		margin: 0 auto;
+		display: none;
+	}
+	.top-nav ul  {
+		display: none;
+		margin-left: 60px;
+	}
+	.bottom-nav  a {
+		padding: 0 20px;
+	}
+	.banner-text .button-1,
+	.banner-text .button-2 {
+	   margin-left: 5%;
+	}
+	.banner-text .button-1 {
+		padding: 5px 10px 15px 8px;
+	}
+	.banner-text .button-2  {
+		padding: 0;
+	}
+	.banner-text .button-2 button {
+		margin-top: 0;
+		margin: 0 auto;
+	}
+	.main article a {
+		margin-left: 42%;
+	}
+	.main-menu li {
+		margin-right: 8px;
+		font-size: 12.5px;
+	}
+	.footer-menu a {
+		margin-right: 1px;
+		font-size: 11px;
+	}
+	.footer-menu ul {
+		border-bottom: 1px dashed #eee;
+	}
+	footer h3 {
+		margin-top: -5px;
+	}
+
+}
+
+@media only screen and (max-width : 340px) {
+	.top-nav a  {
+		padding: 0 20px;
+	}
+	.header-top form {
+		margin-left: 75px;
+	}
+	.banner-text .button-1 i {
+		padding: 0 4px;
+	}
+	.main article a {
+		margin-left: 37%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.top-nav a  {
+		padding: 0 10px;
+	}
+	.top-nav  ul  {
+		margin-left: 60px;
+	}
+	.header-top form {
+		margin-left: 50px;
+	}
+	.bottom-nav ul li {
+		float: left;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.top-nav ul,
+	.login {
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width : 580px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+ 
+@media only screen and (min-width : 1550px) {
+	.banner {
+		background: linear-gradient( #e8e4db, #ebe7de );
+	}
+}

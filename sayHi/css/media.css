@@ -1,0 +1,457 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.top-nav a {
+		padding: 10px 10px;
+	}
+	.icon-img1,
+	.icon-img3,
+	.icon-img5 {
+		margin-left: 110px;
+	}
+	.icon-img2,
+	.icon-img4,
+	.icon-img6 {
+		margin-right: 230px;
+	}
+	iframe {
+		margin-top: -230px;
+		margin-left: 55%;
+	}
+	.course h3 {
+		margin-left: 10px;
+	}
+	.course p {
+		margin-left: 10px;
+	} 
+	#line {
+		width: 600px;
+	}
+	.warranty-button {
+		margin-left: 495px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.top-nav {
+		margin-top: -60px;
+	}
+	.hidden-button {
+		float: right;
+	}
+	.top-nav ul {
+		float: right;
+        display: none;   
+    }  
+    .top-nav li {  
+    	margin-left: 60%; 
+		background-color: rgba(233,233,233,.15);
+        width: 300px;  
+        float: left;  
+        position: relative;  
+        font-size: 20px;  
+        line-height: 40px;
+        margin-bottom: 1px;
+        height: 60px;
+        -webkit-transition: background-color 0.3s ease-in-out 0s;
+   		   -moz-transition: background-color 0.3s ease-in-out 0s;
+   			 -o-transition: background-color 0.3s ease-in-out 0s;
+   				transition: background-color 0.3s ease-in-out 0s;
+   	}  
+    .top-nav li:hover { 
+    	border-left: 2px solid #eee;
+    	background-color: rgba(213,213,213,.1);
+    }
+    .top-nav li a {  
+       margin-top: 0;
+    }  
+    .top-nav a:hover,
+	.top-nav a:focus {
+		box-shadow: none;
+	} 
+   .top-nav a {  
+        text-align: left;  
+        width: 100%;  
+        text-indent: 40px;  
+    }  
+    .header-main h3 {
+		margin-top: 100px;
+		font-size: 40px;
+    }
+    .program h2{
+    	margin-bottom: 100px;
+    }
+	.icon-img1,
+	.icon-img3,
+	.icon-img5 {
+		margin-left: 0;
+		margin-top: -70px;
+	}
+	.icon-img2,
+	.icon-img4,
+	.icon-img6 {
+		margin-top: -20px;
+		margin-left: 0;
+	}
+	.number {
+		margin-top: -15px;
+		margin-left: -20px;
+	}
+	h3.h-right {
+		margin-top: -150px;
+		float: left;
+		margin-left: 470px;
+	}
+	p.p-right {
+		margin-top: -50px;
+		float: right;
+	}
+	p.p-short {
+		margin-right: 80px;
+	}
+	iframe {
+		margin: 80px 0;
+	}
+	.course h3 {
+		text-align: center;
+	}
+	.course p {
+		text-align: left;
+		margin: 0 auto;
+		max-width: 800%;
+		margin-left: 5%;
+	} 
+	.course .button {
+		margin-top: 40px;
+		margin-bottom: 80px;
+	}
+	.course h3 {
+		margin-top: 56px;
+	}
+	.warranty {
+		background-image: url(../img/warranty-small.jpg);
+		background-position: center center;
+		width: 100%;
+		height: 540px;
+	}
+	.warranty h3 {
+		margin-top: 70px;
+		text-align: center;
+	}
+	.warranty h4 {
+		text-align: center;
+		margin: 0 auto;
+	}
+	.warranty input:first-of-type {
+		margin-top: 50px;
+	}
+	.warranty input {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.warranty-button {
+		margin: 0 auto;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	header {
+		height: 500px;
+	}
+	.hidden-button { 
+		margin-left: 30%;
+	}
+	.top-nav li {
+		margin-left: 30%;
+	}
+	header {
+		background-image: url(../img/header-main-mini.jpg);
+        background-repeat: no-repeat;
+    	background-position: center 0;
+	}
+	 .header-main h3 {
+		margin-top: 100px;
+		font-size: 25px;
+    }
+	.hidden-button {
+		float: right;
+	}
+	.top-nav ul { 
+		float: right ;
+		margin-right: 50px;
+	}
+	.top-nav li { 
+		line-height: 30px;
+		float: right ;
+		height: 45px;
+		width: 250px
+	}
+	.top-nav a {   
+        text-indent: 10px; 
+    }  
+    .icon-img1,
+	.icon-img2,
+	.icon-img3,
+	.icon-img4,
+	.icon-img5,
+	.icon-img6 {
+		display: none;
+	}
+	.icon-num1,
+	.icon-num2,
+	.icon-num3,
+	.icon-num4,
+	.icon-num5,
+	.icon-num6 {
+		margin-left: 5%;
+	}
+	.program p {
+		margin-left: 5%;
+		text-align: left;
+	}
+	h3.h-right {
+		margin-top: 0px;
+		margin-left: 0px;
+		max-width: 315px;
+		margin-right: 0;
+	}
+	.program h3 {
+		text-align: left;
+	}
+	p.p-right {
+		float: left;
+		margin-top: 20px;
+		margin-left: 20px;
+		text-align: left;
+		max-width: 400px;
+		margin-right: 170px;
+	}
+	p.p-left {
+		text-align: left;
+	}
+	p.p-push-left {
+		margin-left: 150px;
+	}
+	p.p-push-right {
+		margin-left: 165px;
+	}
+	p.p-short {
+		float: left;
+		margin-top: 50px;
+		margin-left: -200px;
+	}
+	iframe {
+		max-width: 100%;
+	}
+	.course .button {
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	#line {
+		max-width: 90%;
+	}
+	#uw-1 #innam {
+	    margin-left: -1.28%
+	}
+	#uw-2 #innam {
+	    margin-left: -7.28%
+	}
+	#uw-3 #innam {
+	    margin-left: -7.28%
+	}
+	#uw-4 #innam {
+	    margin-left: -9.28%
+	}
+	#uw-5 #innam {
+	    margin-left: -5.28%
+	}
+}
+
+@media only screen and (max-width : 790px) {
+	p.p-left {
+		margin-left: 20px;
+	}
+	p.p-right {
+		margin-right: 20px;
+	}
+	p.p-push-right {
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (max-width : 580px) {
+	.progress-bar {
+		display: none;
+	}
+	.hidden-about {
+		display: block;
+	}
+	.gallery-img {
+		display: none;
+	}
+	.hidden-gallery img {
+		display: block;
+	}
+	.gallery {
+		margin-top: 50px;
+		margin-bottom: 50px;	
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.hidden-button {
+		float: right;
+	}
+	.top-nav ul {  
+		margin-left: 60px;
+	}
+	.header-button {
+		padding: 15px 20px;
+	}
+	.top-nav ul { 
+		margin-right: 10px;
+	}
+	p.p-right {
+		float: left;
+		margin-top: 30px;
+	}
+	h3.h-right {
+		margin-top: -60px;
+		max-width: 315px;
+		margin-left: 110px;
+	}
+	h3.h-push-right {
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.program {
+		background-color: #eee;
+		margin-top: -5px;
+	}
+	.wrapper {
+		height: 200px;
+		background-color: #eee;
+		margin-bottom: 20px;
+	}
+	p.p-short {
+		float: left;
+		margin-top: 50px;
+		margin-left: 23%;
+	}
+	.course a {
+		font-size: 14px;
+	}
+	iframe {
+		height: 200px;	
+	}
+	.course-button {
+		padding: 20px 35px;
+	}
+	.author-button {
+		padding: 20px 35px;
+		margin-top: 20px;
+	}
+	.course h3 {
+		margin-top: 80px;
+	}
+	.author {
+		background-color: #eee;
+	}
+	.slides h3 {
+		font-size: 18px;
+	}
+	.comments label {
+	    margin: 100px 12px 0 16px;
+	}
+	.gallery {
+		background-color: #eee;
+	}
+	.soc-icon1 {
+		margin-right: 40px;
+	}
+	.soc-icon3 {
+		margin-top: -40px;
+	}
+	footer h3 {
+		font-size: 18px;
+		font-weight: 400;
+	}
+	.wrapper>.number {
+		zoom:.9;
+	}
+	.top-nav li {
+		font-size: 15px;
+	}
+	.warranty input {
+		max-width: 280px;
+		font-size: 16px;
+	}
+	.warranty-button {
+		padding: 20px 90px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.hidden-button i {
+		display: none;
+	}
+	.icon-num1,
+	.icon-num2,
+	.icon-num3,
+	.icon-num4,
+	.icon-num5,
+	.icon-num6 {
+		margin-right: 2%;
+	}
+	iframe {
+		height: 160px;
+	}
+	.course-button {
+		padding: 20px 25px;
+		margin-top: -300px;
+	}
+	.course p {
+		color: #2d2e2e;
+	}
+	.soc-icon1,
+	.soc-icon2,
+	.soc-icon3 {
+		zoom: .7;
+	}
+	footer h3 {
+		font-size: 16px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
