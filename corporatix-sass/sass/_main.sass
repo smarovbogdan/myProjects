@@ -1,0 +1,635 @@
+$gradcolor-top1: #cad3e7
+$gradcolor-top2: #fafafc
+$gradcolr-but1: #fefefe
+$gradcolr-but2: #c8c8c8
+
+
+
+
+.top-line
+	+g($gradcolor-top1, $gradcolor-top2)
+	+bs(0 0px 2px 2px rgba(33,57,116,.6))
+	min-height: 90px
+	line-height: 90px
+	.active
+		+g($gradcolr-but1, $gradcolr-but2)
+		+bs(0 2px 0 #a5aab5)
+		+br(30px)
+	img
+		vertical-align: middle
+
+	nav 
+		ul
+			display: inline-block
+
+		li 
+			display: inline-block
+		a
+			+fontF(Arial, 14px, bold)
+			padding: 4px 17px
+			text-decoration: none
+			line-height: 90px
+			transition: -webkit-linear-gradient 2s
+			&:hover
+				+g($gradcolr-but1, $gradcolr-but2)
+				+bs(0 2px 0 #a5aab5)
+				+br(30px)
+			&:active
+				+bs(inset 1px 1px 1px 1px #a5aab5)
+
+.hidden-button 
+	background-color: transparent
+	margin-top: -90px
+	float: right
+	font-weight: bold
+	cursor: pointer
+	font-size: 34px
+	color: #4d62a6
+	border: none
+	width: 130px
+			
+
+.top-slider
+	background-image: url(../img/bk.jpeg)
+	+bor(bottom, 2px, #fff)
+	+bor(top, 2px, #fff)
+	background-repeat: no-repeat
+	height: 500px
+
+	.wrapper
+		height: 420px
+		margin: 20px auto 0
+		position: relative
+		width: 960px
+
+	.slider
+		height: inherit
+		overflow: hidden
+		position: relative
+		width: inherit
+
+	.slides
+		height: inherit
+		opacity: 0
+		position: absolute
+		width: inherit
+		z-index: 0
+		+transform(translateY(1000px))
+		+transition2(transform ease-in-out 1.5s, opacity ease-in-out 1.5s)
+	
+	.slide1 
+		background-image: url(../img/mon1.png)
+		background-repeat: no-repeat
+	.slide2 
+		background-image: url(../img/mon2.png)
+		background-repeat: no-repeat
+	.slide3 
+		background-image: url(../img/mon3.png)
+		background-repeat: no-repeat
+	.slide4 
+		background-image: url(../img/mon4.png)
+		background-repeat: no-repeat
+
+	#slide1:checked ~ .slider > .slide1,
+	#slide2:checked ~ .slider > .slide2,
+	#slide3:checked ~ .slider > .slide3,
+	#slide4:checked ~ .slider > .slide4
+		opacity: 1
+		z-index: 1
+		+scale(1)
+	
+
+	.wrapper > input 
+		display: none
+	
+
+	.wrapper .controls 
+		left: 50%
+		margin-left: -106px
+		margin-top: -10px
+		position: absolute
+		z-index: 2
+	
+
+	.wrapper label 
+		+g($gradcolor-top1, $gradcolor-top2)
+		cursor: pointer
+		display: inline-block
+		height: 16px
+		margin: 25px 12px 0 16px
+		position: relative
+		width: 16px
+		+br(50%)
+		+transition(background ease-in-out 1.5s)
+	
+
+	.wrapper label:active, 
+	#slide1:checked ~ .controls label:nth-of-type(1),
+	#slide2:checked ~ .controls label:nth-of-type(2),
+	#slide3:checked ~ .controls label:nth-of-type(3),
+	#slide4:checked ~ .controls label:nth-of-type(4)
+		background: #4f63aa
+		+bs(0 -1px 0 #ffffff)
+	
+
+	.wrapper label:after 
+		content: " "
+		display: block
+		height: 16px
+		width: 16px
+		+bs(0 2px 0 #a5aab5)
+		+br(50%)
+
+.main
+	font-family: sasn-serif
+	background-color: #dadfeb
+	padding-top: 13px
+	padding-bottom: 18px
+
+.top-main
+	.row
+		+bor(bottom, 2px, #fff)
+		padding-bottom: 16px
+	.text
+		float: left
+		width: 600px
+		margin-top: 10px
+		margin-left: 60px
+		h2 
+			font-size: 36px
+			font-weight: normal
+			color: #132445
+			font-weight: 600
+			line-height: 34px
+	.button
+		width: 340px
+		height: 94px
+		background: linear-gradient( #6c86bc, #6872b5, #adc3f6 )
+		cursor: pointer
+		margin-right: 130px
+		color: #fff
+		font-weight: bold
+		float: right
+		text-transform: uppercase
+		font-size: 25px
+		border-radius: 15px
+		border: 5px solid #fff
+		font-family: "Arial Narrow", "Arial", sans-serif
+		font-stretch: condensed
+		text-shadow: 2px 1px #2f559f
+		box-shadow: inset 0 4px #2e549f
+		padding-top: 8px
+		span 
+			font-size: 34px
+			line-height: 6px
+			padding: 0 0 0 93px
+			display: block
+		img 
+			padding: 18px 13px 0 27px
+		&:hover
+			background: linear-gradient(#4c75ab, #6973c9, #adc3f1)
+		&:active
+			box-shadow: inset 0 -2px #2356ba, inset 0 1px #fff
+
+
+.group
+	padding-top: 37px
+	display: block
+	text-align: center
+	.service-item
+		display: inline-block
+		margin: 0 auto
+		width: 218px
+		border: 18px solid #fff
+		box-shadow: 0 0 6px #505fa5
+		margin-right: 30px
+		margin-bottom: 29px
+		background: #fff
+		color: #132445
+		font-size: 20px
+		border-radius: 2px
+
+		span
+			background-image: url(../img/icons/icon2.png)
+			background-position: 0 0
+			background-repeat: no-repeat
+			width: 184px
+			height: 116px
+			display: block
+			margin-bottom: 12px
+		&:nth-of-type(2)
+			span
+				background-position: 0 -206px
+		&:nth-of-type(3)
+			span
+				background-position: 0 -416px
+		&:nth-of-type(4)
+			span
+				background-position: 0 -617px
+		h3
+			font-family: sans-serif
+			text-align: center
+			font-size: 20px
+			margin-bottom: 16px
+			color: #132445
+			font-weight: bold
+		p 
+			font-size: 13px
+			color: #545668
+			margin-bottom: 14px
+			text-align: left
+		.group-button
+			float: left
+			font-size: 13px
+			font-weight: bold
+			+br(16px)
+			background: linear-gradient( #fefefe, #cfd3db )
+			border: 1px solid #c6ccdc
+			+bs(0 1px 2px #3c4762)
+			padding: 4px 16px 4px 16px
+			&:hover
+				background: linear-gradient( #ccd0db, #c9cedb )
+			&:active
+				+bs(0 -1px 0 #51555e)
+			a 
+				text-decoration: none
+				color: #2945c0
+
+
+.info-item
+	margin-left: 85px
+	float: left
+	width: 493px
+
+	.wrapper
+		float: left
+		height: 143px
+		width: 195px
+		margin-right: 51px
+		display: block
+
+		span
+			background-image: url(../img//icons/icon1.png)
+			background-repeat: no-repeat
+			display: block
+			width: 40px
+			height: 46px
+			margin-right: 7px
+			float: left
+			background-position: 0 0
+		&:nth-of-type(2)
+			span
+				background-position: 0 -105px
+		&:nth-of-type(3)
+			span
+				background-position: 0 -340px
+		&:nth-of-type(4)
+			span
+				background-position: 0 -225px
+	h3
+		font-size: 15px
+		font-weight: bold
+		color: #132445
+		margin-top: 12px
+		margin-bottom: 20px
+	p
+		font-size: 13px
+
+.info-about
+	font-family: sans-serif
+	display: block
+	float: left
+	width: 440px
+	margin: 0
+
+	h3
+		color: #132445
+		font-size: 16px
+		text-align: left
+		font-weight: bold
+		margin: 0
+		padding: 10px 0 15px 0
+	p 
+		font-size: 13px
+		line-height: 24px
+		margin-bottom: 10px
+
+footer 
+	background-color: #565f81
+	min-height: 130px
+	border-top: 1px solid #fff
+
+	p
+		margin-left: 77px
+		color: #9fa8bd
+		font-size: 12px
+	p + p
+		margin-top: 10px
+	p > a
+		color: #dadfeb
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			color: #dadfeb
+.mnu
+	display: inline-block
+	margin-top: 24px
+	margin-left: 62px
+	ul
+		li
+			display: inline-block
+			font-size: 13px
+			color: #dadfeb
+			&:after 
+				content: '|'
+				margin-right: 12px 
+				margin-left: 12px
+			&:nth-of-type(6)
+				&:after
+					display: none
+		a
+			color: #dadfeb
+	
+.soc-icon
+	display: block
+	float: right
+	i
+		display: inline-block
+		cursor: pointer
+		padding: 7px
+		font-size: 20px
+		width: 33px
+		height: 33px
+		color: #fff
+		background-color: #373d56
+		+br(7px)
+		margin-left: 16px
+		+bs(inset 3px 3px 3px  rgba(0,0,0,.1))
+		&:hover
+			+bs(inset 3px 3px 3px  rgba(0,0,0,.3))
+		&:active
+			+bs(inset 3px 3px 3px  rgba(0,0,0,.6))
+	.fa-envelope-o
+		margin-right: 120px
+	h3
+		display: inline-block
+		color: #ccd1df
+		font-size: 13px
+		margin-top: 40px
+	
+//----------------------------MEDIA--------------------------------------
+//----------------------------QUIRIES------------------------------------
+
++r(1200)
+	.top-line
+		nav 
+			a
+				padding: 4px 14px
+				text-decoration: none
+				line-height: 90px
+	.top-main
+		text-align: center
+		.text
+			text-align: center
+			width: 90%
+			margin-left: 10px
+			h2 
+				margin-bottom: 20px
+		.button
+			display: inline-block
+			text-align: left
+			margin-right: 0
+			float: none
+	.group
+		.row
+			+bor(bottom, 1px, #eee)
+			margin-bottom: 40px
+	.info-item
+		margin-left: 20px
+		float: left
+		width: 480px
+
+		.wrapper
+			float: left
+			height: 143px
+			width: 185px
+			margin-right: 51px
+			display: block
+	.info-about
+		font-family: sans-serif
+		display: block
+		float: left
+		width: 440px
+		margin: 0
+	footer 
+		p
+			margin-left: 15px
+	.mnu
+		margin-left: 0
+		margin-top: 30px
+		ul
+			margin-bottom: 15px
+	.soc-icon
+		.fa-envelope-o
+			margin-right: 40px
+		h3
+			margin-top: 30px
+	
++r(992)
+	.top-line
+		nav
+			ul
+				text-align: center 
+				display: none				
+	.top-slider
+		.wrapper
+			width: 640px
+		.slide1
+			background-image: url(../img/mon1_min.png)
+			background-repeat: no-repeat
+		.slide2
+			background-image: url(../img/mon2_min.png)
+			background-repeat: no-repeat
+		.slide3
+			background-image: url(../img/mon3_min.png)
+			background-repeat: no-repeat
+		.slide4
+			background-image: url(../img/mon1_min.png)
+			background-repeat: no-repeat
+	.info-item
+		margin-left: 0
+		float: none
+		width: 90%
+		text-align: center
+		+bor(bottom, 1px, #eee)
+		margin-bottom: 20px
+
+		.wrapper
+			float: none
+			height: 143px
+			width: 185px
+			margin-right: 0
+			display: inline-block
+	.info-about
+		display: block
+		float: none
+		width: 90%
+		margin: 0
+		text-align: center
+		h3
+			text-align: center
+		p
+			float: left
+			margin-left: 20px
+			font-size: 13px
+			line-height: 24px
+			margin-bottom: 10px
+	footer 
+		p
+			text-align: center
+		p + p
+			margin-bottom: 20px
+	.mnu
+		display: block
+		text-align: center
+		ul
+			a
+				li
+					&:after 
+						margin-right: 10px 
+						margin-left: 10px
+	.soc-icon
+		float: none
+		text-align: center
+		margin-bottom: 20px
+		h3
+			margin-top: 0
+
++r(768) 
+	.top-slider
+		.wrapper
+			width: 472px
+			margin: 5px auto 0
+		.slide1
+			background-image: url(../img/mon1_small.png)
+			background-repeat: no-repeat
+		.slide2
+			background-image: url(../img/mon1_small.png)
+			background-repeat: no-repeat
+		.slide3
+			background-image: url(../img/mon1_small.png)
+			background-repeat: no-repeat
+		.slide4
+			background-image: url(../img/mon1_small.png)
+			background-repeat: no-repeat
+	.top-main
+		.text
+			h2 
+				font-size: 30px
+
++r(600)
+	.top-line
+		+g($gradcolor-top1, $gradcolor-top2)
+		+bs(0 0px 2px 2px rgba(33,57,116,.6))
+		min-height: 90px
+		line-height: 90px
+		.active
+			+g($gradcolr-but1, $gradcolr-but2)
+			+bs(0 2px 0 #a5aab5)
+			+br(30px)
+		nav 
+			a
+				+fontF(Arial, 13px, bold)
+				padding: 4px 8px
++r(480)
+	.top-line
+		nav
+			ul
+				text-align: left
+			a
+				+fontF(Arial, 15px, bold)
+		img
+			transform: scale(0.8)
+			margin-left: -20px
+		.hidden-button 
+			font-size: 26px
+			width: 100px
+	.top-slider
+		height: 420px
+		.wrapper
+			height: 360px
+			width: 300px
+			margin: 5 auto 0
+		.slide1
+			background-image: url(../img/mon1_Extrasmall.png)
+			background-repeat: no-repeat
+		.slide2
+			background-image: url(../img/mon1_Extrasmall.png)
+			background-repeat: no-repeat
+		.slide3
+			background-image: url(../img/mon1_Extrasmall.png)
+			background-repeat: no-repeat
+		.slide4
+			background-image: url(../img/mon1_Extrasmall.png)
+			background-repeat: no-repeat
+	.top-main
+		.text
+			h2 
+				font-size: 25px
+		.button
+			display: inline-block
+			text-align: left
+			margin-right: 0
+			float: none
+			width: 280px
+			height: 84px
+			margin-right: 0
+			font-size: 20px
+			box-shadow: inset 0 3px #2e549f
+			padding-top: 8px
+			span 
+				font-size: 26px
+				line-height: 3px
+				padding: 0 0 0 83px
+				display: block
+			img 
+				padding: 15px 6px 0 27px
+	.info-item
+		.wrapper
+			border-bottom: 1px dashed #eee
+			margin-top: 20px
+			&:nth-of-type(4)
+				border-bottom: none
+	.mnu
+		ul
+			a
+				li
+					&:after 
+						margin-right: 1px 
+						margin-left: 1px
+	.soc-icon
+		float: none
+		text-align: center
+		margin-bottom: 20px
+		i
+			margin-left: 0
+		.fa-envelope-o 
+			margin-right: 0px
+		h3
+			margin-top: 0
++r(320)
+	.top-line
+		img
+			transform: scale(0.7)
+			margin-left: -40px
+		i
+			margin-left: 60px
+			font-size: 28px
+		span
+			display: none
+
++rmob(992)
+	.top-line
+		nav
+			ul
+				display: inline-block!important

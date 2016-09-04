@@ -1,0 +1,1008 @@
+$button-red: (linear-gradient(to bottom, #b60000, #ac0000))	
+$button-border-red: 1px outset #c00008
+$button-blue: (linear-gradient(to bottom, #579bc2, #4e8eba))
+$bg-tabs: (linear-gradient(to bottom, #333, #000))	
+
+
+input:focus
+	+bs(inset 0 0 2px 1px blue)
+
+.bg-img
+	background-image: url(../img/bg.jpg)
+	background-repeat: no-repeat
+	+cover
+	min-height: 2002px
+	box-shadow: inset 0 0 120px 120px rgba(0,0,0,.7)
+
+header
+	h1
+		font-family: "Vegur-Bold"
+		font-size: 72px
+		letter-spacing: -4px
+		color: #fff
+		margin: 95px 0 0 135px
+		padding: 0
+	p
+		font-family: "ArialRegular"
+		margin: -30px 0 0 136px
+		font-size: 12px
+		color: #9a6f74
+	nav
+		font-family: "ArialRegular"
+		float: right
+		margin: -66px 0 0 -132px
+		margin-right: 85px
+	li
+		display: inline-block
+		font-size: 11px
+		padding: 0 6px
+
+	a
+		color: #f9f9f9
+		text-decoration: none !important
+		padding: 1.5px 0
+		&:hover
+			color: #f9f9f9
+			border-bottom: 1px solid #fff
+		&:active
+			padding: .5px 0
+	input
+		text-indent: 10px
+		width: 143px
+		height: 24px
+		+br(2px)
+		font-size: 11px
+	.button-header
+		cursor: pointer
+		padding: 4px 17px 4px 17px
+		display: block
+		background-color: #b80000
+		background: $button-red
+		color: #fff
+		border: 1px outset #c00008
+		+br(2px)
+
+		&:hover
+			background-color: #ac0000
+			border: 1px solid #400204
+			+bs(inset 0 -1px #360204)
+		&:active
+			+bs(inset 0 1px #360204)
+
+// .top-mnu
+.small_mnu_button
+	display: none
+.navbar
+	ul
+		float: right
+		list-style: none
+		border-top: 1px solid #7e6a6b
+		float: right
+		margin-right: 104px
+		margin-top: -22px
+		li
+			float: left
+			position: relative
+			display: block
+			&:nth-of-type(1)
+				a
+					border-left: none	
+			&:nth-of-type(5)
+				a
+					border-right: none
+			a
+				display: block
+				background-color: #2c2324
+				+g(#2c2324, #1b1718)
+				border-right: 1px solid #493a3b
+				border-left: 1px solid #210a0c
+				padding: 12px 22px
+				font-family: "ArialBold"
+				font-size: 13px
+				color: #fff
+				text-decoration: none
+		ul
+			list-style: none
+			position: absolute
+			top: 64px
+			left: -9999px
+			opacity: 0
+			-webkit-transition: .25s linear opacity
+			z-index: 2
+			li
+				width: 160px
+				border-top: 1px solid #262626
+				float: none
+				background: url(../img/dot.gif)
+				&:nth-of-type(1)
+					border: none
+				i
+					color: #262626
+					font-size: 20px
+					margin-left: -10px
+					margin-right: 6px
+					transition: all .3s
+			a
+				font-size: 12px
+				white-space: nowrap
+				display: block
+
+	li:hover ul
+		left: 0
+		opacity: 1	
+	li:hover a
+		background: #6b0c36
+		background: rgba(0,0,0,.9)
+		text-decoration: underline
+	li:hover ul a
+		text-decoration: none
+		-webkit-transition: -webkit-transform 0.075s linear
+	li:hover ul li a:hover 
+		background: rgba(0,0,0,1)
+		text-decoration: underline
+		i
+			margin-left: -7px
+			margin-right: 9px
+			color: #fff
+
+.top-main
+	.wrapper
+		border-bottom: 1px solid #1b1b1b
+		margin-left: 106px
+		padding: 0 20px
+		width: 960px
+		height: 40px
+		background-color: #1b1718
+		line-height: 42px
+	.icon
+		display: inline-block
+		cursor: pointer
+		padding: 2px
+		border: 1px solid #3a2b2d
+		background-color: #222222
+		color: #fff
+		line-height: 3px
+		+br(2px)
+		transition: all .2s
+		&:hover
+			background-color: #4e4646
+		&:active
+			i
+				transform: scale(1.1)
+	i
+		font-size: 10px
+	.right-icon
+		padding: 3px
+		&:hover
+			background-color: #4e4646
+		&:active
+			font-size: 12px
+	p
+		display: inline-block
+		font-family: "ArialRegular"
+		font-size: 12px
+		color: #717171
+		margin-left: 24px
+		&:nth-of-type(1)
+			margin-left: 11px
+		&:nth-of-type(3)
+			margin-right: 10px
+	strong
+		font-family: "ArialBold"
+		color: #fff
+
+// .main
+.main-left
+	position: relative
+	display: inline-block
+	background-image: url(../img/car.jpg)
+	background-repeat: no-repeat
+	height: 338px
+	width: 600px
+	margin-left: 106px
+	border-right: 1px solid #000
+	h2
+		max-width: 470px
+		position: absolute
+		background-color: rgba(0,0,0,.55)
+		font-family: "Vegur-Bold"
+		font-size: 48px
+		color: #fff
+		letter-spacing: -2px
+		line-height: .8
+		left: 44px
+		top: 230px
+.main-right
+	position: relative
+	display: inline-block
+	background-image: url(../img/flag.jpg)
+	background-repeat: no-repeat
+	height: 338px
+	width: 360px
+	float: right
+	margin-right: 104px
+
+	h3
+		font-family: "ArialBold"
+		font-size: 13px
+		color: #fff
+		font-weight: bold
+		margin-left: 20px
+		&:nth-of-type(1)
+			margin-top: 66px
+		&:nth-of-type(n + 2)
+			padding-top: 10px
+		span
+			display: inline-block
+			background-image: url(../img/circle.png)
+			+cover
+			width: 7px
+			height: 7px
+			margin-right: 8px
+	p
+		font-family: "ArialRegular"
+		width: 300px
+		font-size: 11px
+		color: #666
+		margin-left: 22px
+		text-indent: 13px
+		line-height: .7
+		padding-bottom: 17px
+		border-bottom: 1px solid rgba(34,34,34,.7)
+		&:last-of-type
+			border-bottom: none
+		span
+
+			border-bottom: 1px solid #666
+.news-feed
+	position: absolute
+	z-index: 1
+	left: -120px
+	top: 28px
+	li
+		display: inline-block
+		float: left
+		z-index: 2
+		&:nth-of-type(1)
+			a
+				font-size: 18px
+				background: #460000
+				cursor: default
+		&:nth-of-type(2)
+			a
+				padding: 9px 16px 9px 26px
+		&:nth-of-type(3)
+			position: relative
+			&:before
+				content: "."
+				position: absolute
+				left: 45%
+				bottom: -12px
+				width: 0
+				height: 0
+				border-top: 6px solid transparent
+				border-right: 12px solid #c60000
+				border-bottom: 6px solid transparent
+				+rotate(-90)
+			a
+				background-color: #c60000
+				padding: 9px 17px 9px 12px
+		&:nth-of-type(4)
+			a
+				padding: 9px 45px 9px 17px
+	a
+		font-family: "ArialBold"
+		font-size: 11px
+		color: #fff
+		text-transform: uppercase
+		padding: 9px 12px
+		background-color: #840000
+		text-decoration: none !important
+		transition: all .4s
+		&:hover
+			color: #fff
+			background-color: #c60000
+	span
+		background-image: url(../img/blind.png)
+		background-repeat: no-repeat
+		height: 37px
+		width: 5px
+		z-index: 2
+	.span-left
+		position: absolute
+		background-position: -5px 0
+		top: -6px
+		left: 115px
+	.span-right
+		position: absolute
+		background-position: -35px 
+		top: -7px
+		right: -5px
+		z-index: 2
+
+.database
+	background-image: url(../img/bg_database.png)
+	width: 960px
+	background-position: -50px -80px
+	margin: -5px auto
+	margin-top: -5px
+	p
+		font-family: "ArialRegular"
+		display: inline-block
+		margin-top: 17px
+		margin-bottom: 50px
+		margin-left: 25px
+		font-size: 12px
+		color: #666
+		&:nth-of-type(n+2)
+			margin-left: 17px
+		span
+			font-family: "ArialBold"
+
+			color: #999
+.car-block
+	width: 960px
+	height: 675px
+	background-color: #000
+	margin: 0 auto
+	padding: 0 15px
+	margin-bottom: 40px
+	+clr
+.find-car
+	display: block
+	height: 336px
+.find-left
+	.tabbed
+		float: left
+		width: 300px
+		margin-top: -10px
+		>input
+			display: none
+		>label
+			font-family: "ArialBold", Arial
+			color: #737373
+			display: block
+			float: left
+			font-size: 11px
+			padding: 4px 9px
+			margin-right: 2px
+			cursor: pointer
+			background: linear-gradient( to bottom, #242424, #090909 )
+			border: 1px solid #646363
+			border-bottom: 1px solid #333
+			+br(3px 3px 0 0)
+			transition: background-color 0.3s
+	.tabs
+		clear: both
+		+perspective(600px)
+		>div 
+			position: absolute
+			opacity: 0
+			width: 300px
+			background-color: #222222
+			background: $bg-tabs
+			padding: 10px 20px
+			line-height: 1.4em
+			transform: rotateX(-20deg)
+			transform-origin: top center
+			transition: opacity 0.3s, transform 1s
+			opacity: 0
+
+			h2
+				font-size: 13px
+				font-family: "ArialBold", Arial
+				color: #fff
+				&:nth-of-type(1)
+					margin-top: 12px
+				&:nth-of-type(n+2)
+					margin-top: 6px
+			p
+				font-family: "ArialRegular"
+				font-size: 11px
+				color: #555
+				padding-bottom: 3px
+				border-bottom: 1px solid rgba(49,49,49,.7)
+			.button-tabs
+				margin-top: 8px
+				margin-left: 10px
+				font-family: "ArialBold"
+				font-size: 11px
+				text-decoration: none
+				cursor: pointer
+				padding: 2px 8px 2px 8px
+				background-color: #b80000
+				background-image: $button-red
+				color: #fff
+				border: 1px outset #c00008
+				+br(3px)
+				float: left
+
+				&:hover
+					background-color: #ac0000
+					border: 1px solid #400204
+					+bs(inset 0 -1px #360204)
+
+				&:active
+					+bs(inset 0 1px #360204)
+				i
+					margin-left: 3px
+			.last-text
+				margin-top: 10px
+				text-indent: 20px
+				border-bottom: none
+	.tabbed > label:hover, .tabbed > input:checked + label
+		background: #333
+		background: -webkit-linear-gradient(top, #393939 0%,#3c3c3c 48%,#363636 52%,#333 100%)
+	#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+	#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+	#tab-nav-3:checked ~ .tabs > div:nth-of-type(3)
+		transform: rotateX(0deg)
+		opacity: 1
+		z-index: 1
+
+.find-right
+	float: right
+	width: 612px
+	background-color: #222
+	margin-top: 15px
+	background: $bg-tabs
+
+	.form-line
+		margin-left: 210px
+		margin-top: -21px
+		margin-bottom: 20px
+		form
+			display: inline-block
+			margin-left: 100px
+			margin-left: 10px
+			&:nth-of-type(1)
+				margin-left: 0
+		input
+			text-indent: 7px
+			margin-left: -4px
+			font-size: 11px
+			font-family: "ArialRegular"
+			color: #000
+			padding: 1px 0
+			+br(3px)
+		.Manufacturer
+			width: 100px
+		.Model
+			width: 120px
+		p
+			font-size: 10px
+			font-family: "ArialBold"
+			color: #fff
+			display: inline-block
+		form + p
+			// margin-left: -10px
+
+	.br-line
+		float: right
+		width: 420px
+		height: 26px
+		margin-top: -28px
+		
+		.br-top
+			height: 13px
+			+br(14px 0 0 0)
+			background-color: #333
+			border-top: 1px solid #6a6a6a
+		.br-bottom
+			height: 25px
+			background-color: #333
+			background: radial-gradient(circle at 0 0, transparent 13px, #333 0)
+			background-position: top left
+			background-size: 100% 60%
+			background-repeat: no-repeat
+			width: 433px
+			margin-left: -12.5px
+			margin-top: -1px
+	h2
+		font-family: "Vegur-Bold"
+		font-size: 30px
+		color: #fff
+		margin-top: -38px
+		margin-left: -2px
+	.wrapper
+		position: relative
+		float: left
+		margin-left: 20px
+	img
+		cursor: pointer
+	span
+		position: absolute
+		right: 0
+		top: 112px
+		height: 23px
+		width: 23px
+		background-color: rgba(0,0,0,.55)
+		+transition(all .8s)
+		&:hover
+			background-color: rgba(0,0,0,1)
+	i
+		margin-top: 5px
+		text-indent: 8px
+		color: #fff
+		cursor: pointer
+	h3
+		font-family: "ArialBold"
+		font-size: 13px
+		color: #fff
+	p
+		font-family: "ArialRegular"
+		font-size: 12px
+		color: #5d5d5d
+		max-width: 135px
+	a
+		font-family: "ArialBold"
+		font-size: 11px
+		color: #fff
+	
+.camaro
+	display: block
+	margin-bottom: 20px
+	height: 340px
+
+.camaro-block
+	width: 480px
+	height: 220px
+	position: relative
+	display: inline-block
+	float: left
+	background-color: #cdcdcd
+	background: linear-gradient( 0deg, #fff, #cdcdcd 60%, #000 )
+	margin-left: -15px
+	background-color: #eee
+	&:before
+		content: "."
+		position: absolute
+		left: 100%
+		top: 24%
+		width: 0
+		height: 0
+		border-top: 15px solid transparent
+		border-right: 15px solid rgba(135,135,135,.85)
+		border-bottom: 15px solid transparent
+		+rotate(180)
+		z-index: 2
+	h2
+		font-family: "Vegur-Bold"
+		font-size: 48px
+		color: #000
+		margin-top: 32px
+		text-indent: 35px
+		letter-spacing: -2px
+	h4
+		font-family: "ArialBold"
+		font-size: 11px
+		color: #fff
+		background-color: #515151
+		+gb( #515151, #565656)
+		margin-left: 35px
+		margin-top: -8px
+		width: 150px
+	p
+		font-family: "ArialRegular"
+		font-size: 13px
+		color: #666
+		margin: 15px 40px 0 35px
+.camaro-slider
+	.wrapper 
+		height: 380px
+		width: 480px
+		float: right
+		margin-right: -15px
+		margin-top: -20px 
+		position: relative
+		display: inline-block
+		.controls-img
+			margin-left: -480px
+			margin-top: -140px
+			position: absolute
+			z-index: 1
+		.controls 
+			left: 82%
+			bottom: 70px
+			position: absolute
+			z-index: 2
+			label
+				cursor: pointer
+				display: inline-block
+				width: 14px
+				height: 14px
+				margin: 25px 2px 0 2px
+				position: relative
+				background: #fff
+				opacity: .4
+				border: 1px solid #000
+				+br(4px)
+				+transition(all ease-in-out .35s)
+		label 
+			float: left
+			cursor: pointer
+			display: inline-block
+			position: relative
+			+tr(all .4s)
+			opacity: .45
+			-webkit-filter: grayscale(1)
+			-moz-filter: grayscale(1)
+			-ms-filter: grayscale(1)
+			-o-filter: grayscale(1)
+		>input
+			display: none	
+	.slider 
+		height: inherit
+		overflow: hidden
+		position: relative
+		width: inherit
+		+bs(0 0 20px rgba(0, 0, 0, .5))
+	.slides 
+		height: inherit
+		opacity: 0
+		position: absolute
+		width: inherit
+		z-index: 0
+		+transform(scale(1.5))
+		+transition2(transform ease-in-out .5s, opacity ease-in-out .5s)
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 
+	opacity: 1
+	z-index: 1
+	+transform(scale(1))
+
+.wrapper label:hover,
+.wrapper .controls label:hover,
+#slide1:checked ~ .controls-img label:nth-of-type(1),
+#slide2:checked ~ .controls-img label:nth-of-type(2),
+#slide3:checked ~ .controls-img label:nth-of-type(3),
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3)
+	opacity: 1
+	-webkit-filter: grayscale(0)
+	-moz-filter: grayscale(0)
+	-ms-filter: grayscale(0)
+	-o-filter: grayscale(0)
+
+.block-bottom
+	width: 960px
+	height: 380px
+	background-color: #000
+	margin: 0 auto
+	padding: 0 15px
+	+clr
+.gasolina-bottom
+	height: 318px
+	margin-bottom: 20px
+	border-bottom: 1px solid rgba(41,41,41,85)
+	+clr
+.gasolina-poll
+	.tabbed
+		float: left
+		width: 300px
+		margin-top: -10px
+		>input
+			display: none
+		>label
+			font-family: "ArialBold", Arial
+			color: #737373
+			display: block
+			float: right
+			margin-left: 2px
+			font-size: 11px
+			padding: 4px 9px
+			cursor: pointer
+			background: linear-gradient( to bottom, #242424, #090909 )
+			border: 1px solid #646363
+			border-bottom: 1px solid #333
+			+br(3px 3px 0 0)
+			transition: background-color 0.3s
+	.tabs
+		clear: both
+		+perspective(600px)
+		>div 
+			position: absolute
+			opacity: 0
+			width: 300px
+			background-color: #222222
+			background: $bg-tabs
+			padding: 10px 20px
+			line-height: 1.4em
+			transform: rotateX(-20deg)
+			transform-origin: top center
+			transition: opacity 0.3s, transform 1s
+			opacity: 0
+		p
+			font-family: "ArialRegular"
+			font-size: 12px
+			color: #666
+			padding-top: 5px
+			padding-bottom: 5px
+			margin-left: 6px
+			width: 260px
+			border-bottom: 1px solid rgba(41,41,41,85)
+			&:nth-of-type(1)
+				margin-top: 11px
+			&:nth-of-type(5),
+			&:nth-of-type(6),
+			&:nth-of-type(7)
+				border-bottom: none
+			&:nth-of-type(7)
+				margin-top: -6px
+		.button-pull
+			cursor: pointer
+			padding: 2px 10px 2px 10px
+			margin-right: 10px
+			float: left
+			background-color: #b80000
+			background-image: $button-red
+			color: #fff
+			border: 1px outset #c00008
+			+br(2px)
+
+			&:hover
+				background-color: #ac0000
+				border: 1px solid #400204
+				+bs(inset 0 -1px #360204)
+			&:active
+				+bs(inset 0 1px #360204)
+	h3
+		font-family: "ArialBold"
+		font-size: 13px
+		color: #fff
+		margin-top: 8px
+	h2
+		font-family: "Vegur-Bold"
+		font-size: 22px
+		line-height: 1
+		color: #fff
+		float: left
+		width: 175px
+	.tabbed > label:hover, .tabbed > input:checked + label 
+		background: #333
+		background: -webkit-linear-gradient(top, #393939 0%,#3c3c3c 48%,#363636 52%,#333 100%)
+	#poll-nav-1:checked ~ .tabs > div:nth-of-type(1),
+	#poll-nav-2:checked ~ .tabs > div:nth-of-type(2)
+		transform: rotateX(0deg)
+		opacity: 1
+		z-index: 1
+
+.gasolina-photos
+	.tabbed
+		float: left
+		width: 300px
+		margin-left: 15px
+		margin-top: -10px
+		>input
+			display: none
+		>label
+			font-family: "ArialBold", Arial
+			color: #737373
+			display: block
+			float: right
+			margin-left: 2px
+			font-size: 11px
+			padding: 4px 9px
+			cursor: pointer
+			background: linear-gradient( to bottom, #242424, #090909 )
+			border: 1px solid #646363
+			border-bottom: 1px solid #333
+			+br(3px 3px 0 0)
+			transition: background-color 0.3s
+			&:nth-of-type(2)
+				margin-left: 0
+	.tabs
+		clear: both
+		+perspective(600px)
+		>div 
+			position: absolute
+			opacity: 0
+			width: 300px
+			background-color: #222222
+			background: $bg-tabs
+			padding: 10px 20px
+			line-height: 1.4em
+			transform: rotateX(-20deg)
+			transform-origin: top center
+			transition: opacity 0.3s, transform 1s
+			opacity: 0
+		img
+			cursor: pointer
+			padding: 3px 3px 3px 0
+		p
+			font-family: "ArialRegular"
+			font-size: 11px
+			color: #666
+			&:nth-of-type(2)
+				margin-top: 20px
+		.button-photos
+			font-family: "ArialRegular"
+			font-size: 11px
+			margin-top: 20px
+			margin-right: 10px
+			cursor: pointer
+			float: left
+			width: 100px
+			padding: 2px 10px 2px 10px
+			background-color: #b80000
+			background-image: $button-red
+			text-decoration: none
+			color: #fff
+			border: 1px outset #c00008
+			+br(2px)
+
+			&:hover
+				background-color: #ac0000
+				border: 1px solid #400204
+				+bs(inset 0 -1px #360204)
+
+			&:active
+				+bs(inset 0 1px #360204)
+	h3
+		font-family: "ArialBold"
+		font-size: 13px
+		color: #fff
+		margin-top: 5px
+	h2
+		font-family: "Vegur-Bold"
+		font-size: 22px
+		line-height: 1
+		color: #fff
+		float: left
+		width: 178px
+	.tabbed > label:hover, .tabbed > input:checked + label 
+		background: #333
+		background: -webkit-linear-gradient(top, #393939 0%,#3c3c3c 48%,#363636 52%,#333 100%)
+	#photos-nav-1:checked ~ .tabs > div:nth-of-type(1),
+	#photos-nav-2:checked ~ .tabs > div:nth-of-type(2)
+		transform: rotateX(0deg)
+		opacity: 1
+		z-index: 1
+
+.gasolina-videos
+	.tabbed
+		float: left
+		width: 300px
+		margin-left: 15px
+		margin-top: -10px
+		>input
+			display: none
+		>label
+			font-family: "ArialBold", Arial
+			color: #737373
+			display: block
+			float: right
+			font-size: 11px
+			padding: 4px 9px
+			cursor: pointer
+			background: linear-gradient( to bottom, #242424, #090909 )
+			border: 1px solid #646363
+			border-bottom: 1px solid #333
+			+br(3px 3px 0 0)
+			transition: background-color 0.3s
+	.tabs
+		clear: both
+		+perspective(600px)
+		>div 
+			position: absolute
+			opacity: 0
+			width: 300px
+			background-color: #222222
+			background: $bg-tabs
+			padding: 10px 20px
+			line-height: 1.4em
+			transform: rotateX(-20deg)
+			transform-origin: top center
+			transition: opacity 0.3s, transform 1s
+			opacity: 0
+		p
+			font-family: "ArialRegular"
+			font-size: 11px
+			color: #666
+			&:nth-of-type(2)
+				margin-top: 20px
+		.button-videos
+			font-family: "ArialRegular"
+			font-size: 11px
+			margin-top: 20px
+			margin-right: 10px
+			cursor: pointer
+			float: left
+			width: 100px
+			padding: 2px 10px 2px 10px
+			background-color: #b80000
+			background-image: $button-red
+			text-decoration: none
+			color: #fff
+			border: 1px outset #c00008
+			+br(2px)
+
+			&:hover
+				background-color: #ac0000
+				border: 1px solid #400204
+				+bs(inset 0 -1px #360204)
+
+			&:active
+				+bs(inset 0 1px #360204)
+	h3
+		font-family: "ArialBold"
+		font-size: 13px
+		color: #fff
+		margin-top: 5px
+	h2
+		font-family: "Vegur-Bold"
+		font-size: 22px
+		line-height: 1
+		color: #fff
+		float: left
+		width: 175px
+	.tabbed > label:hover, .tabbed > input:checked + label
+		background: #333
+		background: -webkit-linear-gradient(top, #393939 0%,#3c3c3c 48%,#363636 52%,#333 100%)
+	#videos-nav-1:checked ~ .tabs > div:nth-of-type(1),
+	#videos-nav-2:checked ~ .tabs > div:nth-of-type(2)
+		transform: rotateX(0deg)
+		opacity: 1
+		z-index: 1
+
+// .line-bottom
+.nav-bottom
+	ul
+		margin-left: 30px
+	li
+		float: left
+		&:after
+			content: "|"
+			margin-right: 12px
+			margin-left: 12px
+		&:nth-of-type(7)
+			&:after
+				display: none
+	a
+		font-family: "ArialRegular"
+		font-size: 11px
+		color: #666
+		&:hover
+			color: #fff
+		
+.nav-bottom-select
+	p
+		font-size: 11px
+		color: #666
+		float: left
+		margin-left: 60px
+		margin-right: 20px
+		margin-top: 4px
+	li
+		float: left
+		font-family: "ArialRegular"
+		&:after
+			content: "|"
+			margin-right: 12px
+			margin-left: 12px
+			color: #666
+		&:nth-of-type(3)
+			&:after
+				display: none	
+	.blue
+		color: blue
+	.red
+		color: red
+	.green
+		color: green
+
+footer
+	margin-top: 60px
+	padding-bottom: 100px
+	p
+		font-family: "ArialBold"
+		font-size: 12px
+		color: #666
+		text-align: center
+	a
+		color: #fff
+		&:hover
+			color: #fff

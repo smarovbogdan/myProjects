@@ -1,0 +1,658 @@
+$gradcolor-top1: #cad3e7
+$gradcolor-top2: #fafafc
+$gradcolr-but1: #fefefe
+$gradcolr-but2: #c8c8c8
+
+header 
+	background-image: url(../img/bg_main.png)
+	+cover
+	height: 800px
+	border-bottom: 4px solid #4bcaff
+	.row
+		margin-right: -50px
+
+.top-line
+	background-image: url(../img/bg_topLine.png)
+	position: relative
+	min-height: 100px
+	line-height: 99px
+	+bor(bottom, 1px, #c0b5a8)
+
+	img
+		position: absolute
+		top: 50px
+		margin-top: -27px   // 54 : 2 = 27	
+	input
+		display: none		
+
+.hidden-button 
+	cursor: pointer
+	font-size: 34px
+	color: #fff
+	border: none
+	margin-top: 33px  // (100-34)/2
+	float: right
+	
+.overlay	 
+	nav
+		ul
+			display: inline-block
+			margin-left: 460px
+		li 
+			display: inline-block
+
+			a
+				+fontF('OpenSans', 13px, 300)
+				padding: 38px 16px
+				color: #fff
+				text-decoration: none
+				+ts(1px 1px 0 rgba(255,255,255,.4))
+				+transition(color linear .3s)
+				&:hover
+					color: #4bcaff
+					+ts(1px 1px 0 rgba(75,202,255,.6))
+					+bor(top, 2px, #4bcaff)
+				&:active
+					padding: 37px 16px	
+
+.lower label
+	text-transform: uppercase
+	font-size: 40px
+	text-align: center
+
+#op:checked~.overlay-hugeinc
+	opacity: 1
+	visibility: visible
+	+transition(opacity 0.5s)
+
+
+
+//------------------------SlIDER-------------------
+.top-slider
+	.wrapper
+		height: 678px
+		margin: 20px auto 0
+		position: relative
+		width: 100%
+
+.slider
+	height: inherit
+	overflow: hidden
+	position: relative
+	width: inherit
+
+.slides
+	height: inherit
+	opacity: 0
+	position: absolute
+	width: inherit
+	z-index: 0
+	+transform(translateY(1000px))
+	+transition2(transform ease-in-out 1.5s, opacity ease-in-out 1.5s)
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3
+	opacity: 1
+	+scale(1)
+
+.top-slider .wrapper > input 
+	display: none
+
+.wrapper .controls 
+	left: 50%
+	margin-left: -38px
+	margin-top: -70px
+	position: absolute
+	z-index: 2
+
+.controls label 
+	cursor: pointer
+	display: inline-block
+	height: 14px
+	margin: 12px 2px 0 2px
+	position: relative
+	width: 15px
+	+br(50%)
+	+transition(background ease-in-out 1.5s)
+
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3)
+	background: #4bcaff
+
+#slide1:checked ~ .side-controls label:nth-of-type(3), 
+#slide2:checked ~ .side-controls label:nth-of-type(1), 
+#slide3:checked ~ .side-controls label:nth-of-type(2)
+	background-image: url(../img/icons/angle.png)
+	background-repeat: no-repeat
+	height: 60px
+	width: 60px
+	left: -60px
+
+#slide1:checked ~ .side-controls label:nth-of-type(2), 
+#slide2:checked ~ .side-controls label:nth-of-type(3), 
+#slide3:checked ~ .side-controls label:nth-of-type(1) 
+	background-image: url(../img/icons/angle.png)
+	background-repeat: no-repeat
+	height: 60px
+	width: 60px
+	right: -40px
+	transform: rotate(180deg)
+
+.side-controls label
+	position: absolute
+	display: block
+	top: 50%
+	margin-top: -15px
+	cursor: pointer
+
+.side-controls label:hover
+	background-position: 0 -80px
+
+.side-controls label:active
+	background-position: 0 -154px
+
+#slide1:checked ~ .controls label:nth-of-type(1), 
+#slide2:checked ~ .controls label:nth-of-type(2), 
+#slide3:checked ~ .controls label:nth-of-type(3)
+	opacity: .8
+
+.controls label:after
+	border: 1px solid #ddd
+	z-index: 2
+	content: " "
+	display: block
+	height: 14px
+	width: 14px
+	+br(50%)
+
+.slide1,
+.slide2,
+.slide3
+	.top-icon
+		display: inline-block
+		font-size: 25px
+		margin-left: 20px
+		margin-top: -10px
+		+br(50%)
+		background-color: rgba(44,39,36,.75)
+		width: 50px
+		height: 50px
+		line-height: 50px
+		text-indent: 15px
+		cursor: pointer
+		+transition(color .7s)
+		&:hover
+			background-color: rgba(44,39,36,.65)
+		&:active
+			+bs(inset 1px 2px 1px 1px #292523)		
+	i
+		color: #fff
+		&:hover
+			color: #4bcaff
+	img
+		position: absolute
+		float: left
+		left: -225px
+		top: 25px
+	h3
+		+fontF('LatoLight', 48px, 100)
+		color: #fff
+		margin-left: 510px
+		margin-top: 191px
+
+		span
+			font-family: "LatoBold"
+	p
+		+fontF('LatoLight', 18px, 100)
+		max-width: 700px
+		color: #fff
+		margin-left: 512px
+		margin-top: 11px
+		&:last-of-type 
+			margin-top: 85px
+
+.button
+	display: inline-block
+	margin-left: 515px
+	margin-top: 75px
+
+	.button-download,
+	.button-learn 
+		text-transform: uppercase
+		text-decoration: none
+		border: 1px solid #eee
+		+br(10px)
+		+bor(all ,2px, #edebe9)
+		padding: 22px 52px
+		color: #fff
+		font-family: "LatoBold"
+		font-size: 15px
+		margin-left: 30px
+		color: #fff
+		&:hover
+			background-color: #4bcaff
+			+bs(0 4px 0 #277697)
+			+bor(all ,2px, #4bcaff)
+		&:active
+			+bs(inset 0 0px 0px #277697)
+			+bor(all ,2px, #2791a8)
+
+.button-learn 
+	margin-left: 30px
+
+//----------------------------SlIDER-------------------------
+
+.features
+	background-color: #f9f9f9
+	text-align: center
+	+bor(top, 1px ,#fff)
+	+bor(bottom, 1px ,#e7e7e7)
+	h2
+		font-family: "LatoBlack"
+		text-align: center
+		font-size: 36px
+		margin-top: 50px
+		color: #414042
+	h4
+		font-family: "LatoLight"
+		text-align: center
+		font-size: 20px
+		color: #636264
+	.wrapper
+		display: inline-block
+		margin-top: 55px
+		margin-left: 55px
+		margin-bottom: 90px
+		+transition(background-color .5s)
+		&:hover .bg-img
+			background-color: #414042
+		&:hover h3
+			color: #4bcaff
+		h3
+			font-family: "LatoBold"
+			text-align: center
+			width: 230px
+			font-size: 16px
+			margin-bottom: 30px
+			margin-top: 30px
+			text-transform: uppercase
+		p 
+			font-family: "LatoRegular"
+			text-align: center
+			width: 230px
+			font-size: 14px
+		.bg-img
+			width: 160px
+			height: 160px
+			+br(50%)
+			+bs(0 0 0 4px #efefef)
+			background-color: #4bcaff	
+			cursor: pointer
+			+transition(background-color .4s)
+			margin-left: 35px
+			span
+				display: block
+				background-image: url(../img/icons/icon.png)
+				background-position: 55px 40px
+				background-repeat: no-repeat
+				width: 130px
+				height: 130px
+		&:nth-of-type(2)
+			.bg-img
+				span
+					background-position: -258px 40px
+		&:nth-of-type(3)
+			.bg-img
+				span
+					background-position: -570px 40px
+		&:nth-of-type(4)
+			.bg-img
+				span
+					background-position: -885px 40px
+
+.ListAccount
+	margin-bottom: 80px
+	h2 
+		font-family: "LatoBlack"
+		margin-bottom: 70px
+		margin-top: 70px
+		margin-top: 70px
+		text-align: center
+		font-size: 36px 
+		color: #414042
+		+ts(0 0 2px #b4b4b5)
+	input 
+		display: none
+	.wrap
+		+clr
+		margin-top: 60px
+		margin-left: 150px
+		img
+			float: left
+			margin-top: -10px
+			margin-right: 55px
+		h3
+			font-family: "Latobold"
+			font-size: 34px
+			color: #44cfde
+		p 
+			font-family: "Latobold"
+			max-width: 880px
+			font-size: 20px
+			margin-top: 10px
+		label
+			position: relative
+			left: -100px
+			top: 56px
+			display: block
+			cursor: pointer
+			height: 12px
+			width: 12px
+			+br(50%)
+			transition: .4s
+			&:after
+				position: absolute
+				content: " "
+				top: -10px
+				left: -10px
+				+bor(all, 2px, #e4e4e4)
+				z-index: 2
+				content: " "
+				display: block
+				height: 32px
+				width: 32px
+				+br(50%)
+
+.wrap label:hover,
+#vSlide1:checked ~ .vSlide1 label,
+#vSlide2:checked ~ .vSlide2 label,
+#vSlide3:checked ~ .vSlide3 label,
+#vSlide4:checked ~ .vSlide4 label
+	background: #4bcaff
+
+.wrap label:active,
+#vSlide1:checked ~ .vSlide1 label,
+#vSlide2:checked ~ .vSlide2 label,
+#vSlide3:checked ~ .vSlide3 label,
+#vSlide4:checked ~ .vSlide4 label
+	box-shadow: inset 2px 2px 2px #5eb3d7
+
+.wrap label:hover:after,
+#vSlide1:checked ~ .vSlide1 label:after,
+#vSlide2:checked ~ .vSlide2 label:after,
+#vSlide3:checked ~ .vSlide3 label:after,
+#vSlide4:checked ~ .vSlide4 label:after
+	border: 7px solid #4bcaff
+
+//Media
+//Queries
+
++r(1200)
+	.overlay nav ul 
+		margin-left: 200px
+	.slide1,
+	.slide2,
+	.slide3
+		h3
+			margin-top: 100px
+			margin-left: 300px
+		p 
+			margin-left: 300px
+	.button
+		margin-left: 400px
+	#slide1:checked ~ .side-controls label:nth-of-type(3), 
+	#slide2:checked ~ .side-controls label:nth-of-type(1), 
+	#slide3:checked ~ .side-controls label:nth-of-type(2) 
+		left: 0px
+	#slide1:checked ~ .side-controls label:nth-of-type(2), 
+	#slide2:checked ~ .side-controls label:nth-of-type(3), 
+	#slide3:checked ~ .side-controls label:nth-of-type(1) 
+		right: 40px
+	.features .wrapper
+		margin-left: 20px
+
++r(992)
+	header 
+		height: 660px
+		.row
+			margin-right: 0
+		.top-line
+			line-height: 35px
+	.slide1,
+	.slide2,
+	.slide3
+		.top-icon
+			font-size: 25px
+			margin-left: 15px
+			margin-top: -10px
+			text-indent: 0
+			text-align: center
+		h3
+			text-align: center
+			margin-left: 0
+			font-size: 35px
+			margin-top: 15px
+			margin-right: 20px
+		p
+			margin-left: 250px
+			margin-right: 20px
+			margin-top: 40px
+			font-size: 18px
+	.button
+		margin-left: 200px
+	.top-slider .wrapper 
+		height: 540px
+	.top-slider .wrapper .controls
+		margin-top: -60px
+	.overlay 
+		z-index: 3 
+		background: rgb(79,201,250)
+		position: fixed
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		label
+			width: 58px
+			height: 58px
+			position: absolute
+			right: 75px
+			top: 35px
+			background: url(../img/cross.png)
+			background-repeat: no-repeat
+			z-index: 100
+			cursor: pointer
+		nav 
+			text-align: center
+			position: relative
+			top: 35%
+			height: 55%
+			-webkit-transform: translateY(-50%)
+			transform: translateY(-50%)
+
+			ul 
+				list-style: none
+				padding: 0
+				margin: 0 auto
+				display: inline-block
+				height: 100%
+				position: relative
+
+				li 
+					display: block
+					height: 20%
+					height: calc(100% / 5)
+					min-height: 54px
+
+					a 
+						font-weight: 300
+						// display: block
+						color: white
+						text-decoration: none
+						+transition(color 0.2s)
+						+transition(border-bottom 0.3s)
+						text-transform: uppercase
+						padding: 5px 0
+						font-size: 35px
+						&:hover
+							color: #849368
+							// +ts(1px 1px 0 rgba(75,202,255,.6))
+							+bor(bottom, 3px, #fff)
+						&:active
+							padding: 4px 0	
+							
+	.overlay-hugeinc 
+		nav 
+			+perspective(300px)
+
+			ul 
+				opacity: 0.4
+				-webkit-transform: translateY(-25%) rotateX(35deg)
+				transform: translateY(-25%) rotateX(35deg)
+				+transition2(transform 0.5s, opacity 0.5s)
+
+	#op:checked~.overlay-hugeinc nav ul 
+		opacity: 1
+		-webkit-transform: rotateX(0deg)
+		transform: rotateX(0deg)
+
+	#op:not(:checked)~.overlay-hugeinc nav ul 
+		-webkit-transform: translateY(25%) rotateX(-35deg)
+		transform: translateY(25%) rotateX(-35deg)
+
+	.lower~.overlay-hugeinc
+		opacity: 0
+		visibility: hidden
+		-webkit-transition: opacity 0.5s, visibility 0s 0.5s
+		transition: opacity 0.5s, visibility 0s 0.5s
+
+	.lower label:hover
+		cursor: pointer
+	.overlay ul li a:hover,
+	.overlay ul li a:focus 
+		color: #849368
+	.side-controls label
+		display: none
+
++r(768)
+	header 
+		background-image: url(../img/bg-small.jpg)
+		height: 800px
+	.top-slider .wrapper 
+		height: 680px
+	.top-line
+		img
+			margin-left: 40px
+	.overlay 
+		label
+			right: 0
+			top: 40px
+	.slide1,
+	.slide2,
+	.slide3
+		margin-left: 20px
+		h3
+			font-size: 40px
+		p
+			text-align: center
+			margin-left: 0
+			margin-top: 40px
+			font-size: 18px
+	.button
+		display: block
+		margin-left: 0
+		.button-download,
+		.button-learn
+			display: block
+			width: 200px
+			font-size: 14px
+			margin: 0 auto
+			margin-top: 30px
+	.top-slider .wrapper .controls 
+		left: 50%
+		margin-left: -38px
+		margin-top: -70px
+		position: absolute
+		z-index: 2
+	.ListAccount
+		.wrap
+			margin-left: 70px
+			img
+				margin-right: 10px
+			h3
+				font-size: 25px
+			p 
+				font-size: 16px
+			label
+				left: -40px
+
++r(600)
+	.slide1,
+	.slide2,
+	.slide3
+		h3
+			font-size: 30px
+
+
++r(480)
+	.top-line
+		img
+			margin-left: 0
+	.overlay 
+		label
+			+scale(.8)
+			top: 35px
+		nav 
+			top: 30%
+			height: 35%
+
+			ul 
+				li 
+					a 
+						padding: 5px 0
+						font-size: 20px
+						&:hover
+							color: #849368
+							+bor(bottom, 3px, #fff)
+						&:active
+							padding: 4px 0	
+	.slide1,
+	.slide2,
+	.slide3
+		h3
+			font-size: 30px
+			margin-top: 0
+		p 
+			margin-top: 10px
+			font-size: 16
+			&:last-of-type 
+				margin-top: 45px
+		.button
+			margin-top: 0
+	.features 
+		.wrapper
+			margin-left: 0
+			margin-top: 20px
+			margin-bottom: 20px
+		h2
+			font-size: 30px
+	.ListAccount
+		h2
+			font-size: 30px
+		.wrap
+			margin-left: 50px
+			img
+				+scale(.7)
+				margin-top: -40px
+				margin-right: 0
+			h3
+				font-size: 22px
+				margin-bottom: 55px
+			p 
+				font-size: 16px
+			label
+				top: 25px
+				left: -35px
+

@@ -85,11 +85,7 @@
     }
     .top_search img {
         top: 3px;
-        right: 12px;
-    }
-    .top_search i {
-        top: 8px;
-        right: 25px;
+        right: -20px;
     }
     .top_content img {
         display: none;

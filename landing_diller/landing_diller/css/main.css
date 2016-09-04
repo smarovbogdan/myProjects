@@ -101,22 +101,17 @@ body {
 }
 
 .search input {
-	padding: 0 40px;
-	width: 120px;
+	padding: 0 0 0 20px;
+	width: 160px;
+	font-weight: 100;
+	color: #666;
+	font-family: Arial, sans-serif;
 }
 
 .top_search img {
 	position: absolute;
 	top: 3px;
-	right: 95px;
-}
-
-.top_search i {
-	position: absolute;
-	top: 8px;
 	right: 105px;
-	font-size: 20px;
-	color: #999999
 }
 
 .top_content {

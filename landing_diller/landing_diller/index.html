@@ -53,16 +53,17 @@
 							    	<li><a href="#">Контакты</a></li>
 							    </ul>
 					       </nav>
-					       <div class="search_hidden hidden-sm hidden-md hidden-lg"><input type="search" alt="" placeholder="Выбрать язык |">
-					            <img src="img/header_google_icon.png" alt="">
-								<i class="fa fa-sort-desc" aria-hidden="true"></i>
-							</div>
 					</div>
 					<div class="col-md-2">
 					    <div class="top_search">
-					        <div class="search"><input type="search" alt="" placeholder="Выбрать язык |">
+					        <div class="search">
+                                <input list="language" class="language" placeholder="Выбрать язык |">
+                                <datalist id="language">
+                                <option value="русский"></option>
+                                <option value="украинский"></option>
+                                <option value="английский"></option>
+                                </datalist>
 					            <img src="img/header_google_icon.png" alt="">
-								<i class="fa fa-sort-desc" aria-hidden="true"></i>
 							</div>
 						</div>
 					</div>
@@ -134,7 +135,7 @@
         		<div class="row">
         			<div class="col-md-3"></div>
         			<div class="col-md-8">
-        				<iframe class="my_frame"  src="https://www.youtube.com/embed/b8iR_wlElZk" frameborder="0" allowfullscreen></iframe>
+        				<iframe class="my_frame"  src="https://www.youtube.com/embed/b8iR_wlElZk" allowfullscreen></iframe>
         				<h3 class="section_contain_h3_margin"><img src="img/_section_contain_circle-1.png" alt="">Вы можете быстро получить удобный интернет-магазин для начала работы
 						в интернете!</h3>
         				<h3><img src="img/_section_contain_circle-2.png" alt="">Puffery - это простая система управления вашим интернет-магазином с
@@ -432,12 +433,12 @@
 					<h3>ВИДЕО ОТЗЫВ</h3>
 					<div class="col-md-6">
 						<div class="article_iframe_left">
-							<iframe class="my_frame"  src="https://www.youtube.com/embed/b8iR_wlElZk" frameborder="0" allowfullscreen></iframe>
+							<iframe class="my_frame"  src="https://www.youtube.com/embed/b8iR_wlElZk" allowfullscreen></iframe>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="article_iframe_right">
-							<iframe class="my_frame"  src="https://www.youtube.com/embed/b8iR_wlElZk" frameborder="0" allowfullscreen></iframe>
+							<iframe class="my_frame"  src="https://www.youtube.com/embed/b8iR_wlElZk" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
@@ -462,18 +463,6 @@
     		<p>Copyright ©<a href="http://www.puffery.biz/"><span> Puffery.biz</span></a> 2016</p>
     	</footer>
 				
-			
-		
-			
-		
-
-	<div class="hidden"></div>
-	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
-	<div class="device-xs visible-xs"></div>
-	<div class="device-sm visible-sm"></div>
-	<div class="device-md visible-md"></div>
-	<div class="device-lg visible-lg"></div>
-	<!-- end mandatory -->
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
