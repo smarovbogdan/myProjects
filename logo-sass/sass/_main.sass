@@ -1,12 +1,7 @@
-$gradcolor-top1: #cad3e7
-$gradcolor-top2: #fafafc
-$gradcolr-but1: #fefefe
-$gradcolr-but2: #c8c8c8
-
 header 
 	background-image: url(../img/bg_main.png)
 	+cover
-	height: 800px
+	height: 804px
 	border-bottom: 4px solid #4bcaff
 	.row
 		margin-right: -50px
@@ -33,12 +28,12 @@ header
 	margin-top: 33px  // (100-34)/2
 	float: right
 	
-.overlay	 
+.overlay
 	nav
 		ul
 			display: inline-block
 			margin-left: 460px
-		li 
+		li
 			display: inline-block
 
 			a
@@ -53,7 +48,7 @@ header
 					+ts(1px 1px 0 rgba(75,202,255,.6))
 					+bor(top, 2px, #4bcaff)
 				&:active
-					padding: 37px 16px	
+					padding: 37px 16px
 
 .lower label
 	text-transform: uppercase
@@ -68,6 +63,7 @@ header
 
 
 //------------------------SlIDER-------------------
+//-------------------------CSS---------------------
 .top-slider
 	.wrapper
 		height: 678px
@@ -143,15 +139,13 @@ header
 .side-controls label
 	position: absolute
 	display: block
-	top: 50%
+	top: 45%
 	margin-top: -15px
 	cursor: pointer
-
-.side-controls label:hover
-	background-position: 0 -80px
-
-.side-controls label:active
-	background-position: 0 -154px
+	&:hover
+		background-position: 0 -80px
+	&:active
+		background-position: 0 -154px
 
 #slide1:checked ~ .controls label:nth-of-type(1), 
 #slide2:checked ~ .controls label:nth-of-type(2), 
@@ -182,7 +176,7 @@ header
 		line-height: 50px
 		text-indent: 15px
 		cursor: pointer
-		+transition(color .7s)
+		+transition(color .4s)
 		&:hover
 			background-color: rgba(44,39,36,.65)
 		&:active
@@ -215,34 +209,36 @@ header
 
 .button
 	display: inline-block
-	margin-left: 515px
+	margin-left: 485px
 	margin-top: 75px
 
-	.button-download,
-	.button-learn 
+	.button-download
 		text-transform: uppercase
 		text-decoration: none
 		border: 1px solid #eee
 		+br(10px)
-		+bor(all ,2px, #edebe9)
+		+bor(all , 2px, #edebe9)
 		padding: 22px 52px
 		color: #fff
 		font-family: "LatoBold"
 		font-size: 15px
 		margin-left: 30px
 		color: #fff
+		+transition(all .3s)
 		&:hover
 			background-color: #4bcaff
 			+bs(0 4px 0 #277697)
 			+bor(all ,2px, #4bcaff)
 		&:active
 			+bs(inset 0 0px 0px #277697)
-			+bor(all ,2px, #2791a8)
+			+bor(all , 2px, #2791a8)
 
-.button-learn 
-	margin-left: 30px
+	.button-learn
+		@extend .button-download
+		margin-left: 30px
 
-//----------------------------SlIDER-------------------------
+//--------------------------------END--------------------------
+//-------------------------------SlIDER-------------------------
 
 .features
 	background-color: #f9f9f9
@@ -253,7 +249,7 @@ header
 		font-family: "LatoBlack"
 		text-align: center
 		font-size: 36px
-		margin-top: 50px
+		margin-top: 40px
 		color: #414042
 	h4
 		font-family: "LatoLight"
@@ -317,8 +313,7 @@ header
 	h2 
 		font-family: "LatoBlack"
 		margin-bottom: 70px
-		margin-top: 70px
-		margin-top: 70px
+		margin-top: 35px
 		text-align: center
 		font-size: 36px 
 		color: #414042
@@ -335,7 +330,7 @@ header
 			margin-right: 55px
 		h3
 			font-family: "Latobold"
-			font-size: 34px
+			font-size: 33px
 			color: #44cfde
 		p 
 			font-family: "Latobold"
@@ -386,11 +381,11 @@ header
 #vSlide4:checked ~ .vSlide4 label:after
 	border: 7px solid #4bcaff
 
-//Media
-//Queries
+//-------------------------Media--------------------------
+//-------------------------Queries--------------------------
 
 +r(1200)
-	.overlay nav ul 
+	.overlay nav ul
 		margin-left: 200px
 	.slide1,
 	.slide2,
@@ -398,7 +393,7 @@ header
 		h3
 			margin-top: 100px
 			margin-left: 300px
-		p 
+		p
 			margin-left: 300px
 	.button
 		margin-left: 400px
@@ -414,7 +409,7 @@ header
 		margin-left: 20px
 
 +r(992)
-	header 
+	header
 		height: 660px
 		.row
 			margin-right: 0
@@ -480,15 +475,14 @@ header
 				height: 100%
 				position: relative
 
-				li 
+				li
 					display: block
 					height: 20%
 					height: calc(100% / 5)
 					min-height: 54px
 
-					a 
+					a
 						font-weight: 300
-						// display: block
 						color: white
 						text-decoration: none
 						+transition(color 0.2s)
@@ -498,22 +492,21 @@ header
 						font-size: 35px
 						&:hover
 							color: #849368
-							// +ts(1px 1px 0 rgba(75,202,255,.6))
 							+bor(bottom, 3px, #fff)
 						&:active
 							padding: 4px 0	
 							
 	.overlay-hugeinc 
-		nav 
+		nav
 			+perspective(300px)
 
-			ul 
+			ul
 				opacity: 0.4
 				-webkit-transform: translateY(-25%) rotateX(35deg)
 				transform: translateY(-25%) rotateX(35deg)
 				+transition2(transform 0.5s, opacity 0.5s)
 
-	#op:checked~.overlay-hugeinc nav ul 
+	#op:checked~.overlay-hugeinc nav ul
 		opacity: 1
 		-webkit-transform: rotateX(0deg)
 		transform: rotateX(0deg)
@@ -537,10 +530,10 @@ header
 		display: none
 
 +r(768)
-	header 
+	header
 		background-image: url(../img/bg-small.jpg)
 		height: 800px
-	.top-slider .wrapper 
+	.top-slider .wrapper
 		height: 680px
 	.top-line
 		img
@@ -563,14 +556,13 @@ header
 	.button
 		display: block
 		margin-left: 0
-		.button-download,
-		.button-learn
+		.button-download
 			display: block
 			width: 200px
 			font-size: 14px
 			margin: 0 auto
 			margin-top: 30px
-	.top-slider .wrapper .controls 
+	.top-slider .wrapper .controls
 		left: 50%
 		margin-left: -38px
 		margin-top: -70px
@@ -608,9 +600,9 @@ header
 			top: 30%
 			height: 35%
 
-			ul 
-				li 
-					a 
+			ul
+				li
+					a
 						padding: 5px 0
 						font-size: 20px
 						&:hover
@@ -622,22 +614,35 @@ header
 	.slide2,
 	.slide3
 		h3
-			font-size: 30px
-			margin-top: 0
+			font-size: 38px
+			text-align: left
+			margin-left: 10px
+			margin-top: 10px
+			line-height: 42px
 		p 
 			margin-top: 10px
-			font-size: 16
+			font-size: 16px
+			text-align: left
+			margin-left: 10px
 			&:last-of-type 
 				margin-top: 45px
 		.button
 			margin-top: 0
-	.features 
+	.features
+		h2
+			margin-top: 44px
+			font-size: 30px
+		h4
+			margin-top: 10px
+			font-size: 16px
+			margin-bottom: 40px
 		.wrapper
 			margin-left: 0
 			margin-top: 20px
 			margin-bottom: 20px
-		h2
-			font-size: 30px
+			p
+				font-size: 13px
+				margin-top: -10px
 	.ListAccount
 		h2
 			font-size: 30px
@@ -650,9 +655,8 @@ header
 			h3
 				font-size: 22px
 				margin-bottom: 55px
-			p 
+			p
 				font-size: 16px
 			label
 				top: 25px
 				left: -35px
-

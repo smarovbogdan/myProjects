@@ -1,0 +1,1011 @@
+header
+	background-image: url(../img/Bg_header.jpg)
+	+cover
+	min-height: 900px
+	position: relative
+	article 
+		margin-top: 145px
+		max-width: 792px
+		margin-left: 0px
+		h2
+			font-family: "GothamProBlack"
+			letter-spacing: 2.2px
+			font-size: 42px
+			color: #fff
+		h3
+			font-family: "GothamProBlack"
+			letter-spacing: 1.1px
+			font-size: 24px
+			color: #fff
+			margin-bottom: 30px
+		h4
+			font-family: "GothamProMedium"
+			font-size: 20px
+			color: #fdad00
+			letter-spacing: 1.5px
+			margin-bottom: 14px
+		h3+h4
+			font-family: "GothamProMedium"
+			font-size: 24px
+			color: #fdad00
+	section
+		margin-top: 96px
+		max-width: 1115px
+		min-height: 114px
+		background-color: rgba(205,203,202,.7)
+		padding: 18px 35px 24px 35px
+		position: relative
+		&:after
+			content: "."
+			position: absolute
+			top: -20px
+			width: 1100px
+			height: 114px
+			background-image: url(../img/section_border.png)
+			+cover
+		h3
+			font-family: "GothamProRegular"
+			font-size: 18px
+			color: #222
+			line-height: 1.5
+			letter-spacing: .3px
+
+.button-header
+	margin-top: 100px
+	a
+		text-decoration: none !important
+		font-family: "GothamProBlack"
+		font-size: 24px
+		color: #fff
+		letter-spacing: 2px
+		padding: 16px 60px 16px 60px
+		background-color: #fdad00
+		+br(30px)
+		+bs(2px 0 6px rgba(0,0,0,.45))
+		+ts(2px 2px 6px rgba(0,0,0,.35))
+		&:visited
+			color: #fff
+		&:hover
+			background-color: #fbb51e
+			+bs(0 4px 0 #c78800)
+			border: 2px solid #c78800
+		&:active
+			+bs(inset 0 1.5px 0 #aa7400)
+			border: 2px solid #dc9701
+
+.button-bottom
+	bottom: -40px
+	position: absolute
+	left: 50%
+	margin-left: -40px // 80:2
+	cursor: pointer
+	+br(50%)
+	height: 80px
+	width: 80px
+	background-color: #fff
+	+bs(0 0 8px rgba(0,0,0,.6))
+	z-index: 10
+	+transition(all .4s)
+	&:hover
+		background-color: #eee
+	&:active
+		+bs( 0 0 12px rgba(0,0,0,.85))
+	&:active i
+		margin-top: 17px
+	i
+		color: #000
+		font-size: 54px
+		text-indent: 25px
+		margin-top: 15px
+		font-weight: 100
+
+.master-class
+	background-image: url(../img/bg_msClass.jpg)
+	+cover
+	min-height: 1214px
+	text-align: center
+	padding: 0
+	position: relative
+
+	h2
+		font-family: "GothamProBlack"
+		color: #31343a
+		font-size: 30px
+		// text-align: center
+		letter-spacing: 1.6px
+		margin-top: 110px
+		+ts(-1px 1px 1px #969799)
+		margin-bottom: 74px
+	.col-md-4
+		&:nth-of-type(1)
+	.col-md-4
+		&:nth-of-type(2)
+			span
+				background-position: -128px 0px
+		&:nth-of-type(3)
+			span
+				background-position: -248px -5px
+		&:nth-of-type(4)
+			span
+				background-position: -3px -100px
+		&:nth-of-type(5)
+			span
+				background-position: -128px -100px
+		&:nth-of-type(6)
+			span
+				background-position: -248px -100px
+		&:nth-of-type(7)
+			margin-top: -80px
+			span
+				background-position: -3px -205px
+		&:nth-of-type(8)
+			margin-top: -80px
+			span
+				background-position: -128px -205px
+		&:nth-of-type(9)
+			margin-top: -80px
+			span
+				background-position: -248px -205px
+	.num-item
+		float: left
+		text-align: center
+		margin-bottom: 40px
+		min-height: 212px
+		width: 350px
+		span
+			background-image: url(../img/Number_Sprites.png)
+			display: block
+			background-repeat: no-repeat
+			width: 105px
+			height: 100px
+		p
+			font-family: "GothamProMedium"
+			text-align: left
+			font-size: 20px
+			color: #31343a
+	.border-section
+		margin-top: -15px
+		text-align: center
+		border: 2px solid #ff8811
+		padding: 30px 3px 30px 3px
+		width: 100%
+		h3
+			font-family: "GothamProBlack"
+			font-size: 22px
+			color: #31343a
+			letter-spacing: .6px
+	section
+		margin-top: 50px
+		h3
+			font-family: "GothamProLight"
+			font-size: 18px
+			color: #222
+			margin-bottom: 4px
+	.fa-icon
+		margin: 0 auto
+	.soc-icon
+		display: inline-block
+		width: 40px
+		height: 40px
+		background-color: #000
+		cursor: pointer
+		+transition(all .4s)
+		&:nth-of-type(1)
+			background-color: #404aa7
+			&:hover
+				background-color: #6270ee
+		&:nth-of-type(2)
+			margin-left: 10px
+			background-color: #556ae4
+			&:hover
+				background-color: #92bffc
+		&:nth-of-type(3)
+			margin-left: 10px
+			background-color: #6aa3f2
+			&:hover
+				background-color: #88baff
+		&:nth-of-type(4)
+			margin-left: 10px
+			background-color: #ed812b
+			&:hover
+				background-color: #ff9947
+		&:nth-of-type(5)
+			margin-left: 10px
+			background-color: #bb451f
+			&:hover
+				background-color: #e65e32
+		i
+			color: #fff
+			font-size: 26px
+			margin-top: 8px
+
+.masterClass-button
+	@extend .button-bottom
+	i
+		color: #000
+		font-size: 54px
+		text-indent: 5px
+		margin-top: 15px
+		font-weight: 100
+
+.trainer
+	background-color: #eeeded
+	min-height: 1130px
+	position: relative
+
+	h2
+		padding-top: 105px
+		text-align: center
+		font-size: 30px
+		font-family: "GothamProBlack"
+		color: #31343a
+		letter-spacing: 1.3px
+		text-transform: uppercase
+
+.tabs-trainer
+	.tabbed
+		width: 100%
+		margin-top: -20px
+		position: relative
+		>input
+			display: none
+		>label
+			position: absolute
+			left: 50%
+			margin-left: -20px
+			top: 15px
+			color: #737373
+			padding: 4px 4px
+			cursor: pointer
+			+br(5px)
+			transition: background-color 0.3s
+			z-index: 1
+		label + input + label
+			position: absolute
+			left: 50%
+			margin-left: 20px
+			top: 15px
+			color: #737373
+			padding: 4px 4px
+			cursor: pointer
+			+br(5px)
+			transition: background-color 0.3s 
+			z-index: 1
+	.tabs
+		clear: both
+		+perspective(1000px)
+		>div 
+			position: absolute
+			opacity: 0
+			width: 100%
+			padding: 10px 20px
+			line-height: 1.4em
+			transform: rotateX(-20deg)
+			transform-origin: top center
+			transition: opacity 0.3s, transform 1s
+			opacity: 0
+			
+			section
+				position: relative
+				max-width: 650px
+				float: left
+				margin-top: 70px
+				margin-left: 100px
+				position: relative
+				&:after
+					content: "."
+					position: absolute
+					left: -45px
+					top: 5px
+					width: 6px
+					height: 340px
+					background-color: #fdad00
+				h3
+					font-size: 18px
+					color: #222
+					line-height: 35px
+					letter-spacing: 1.5px
+					font-weight: 500
+
+			img
+				float: right
+				margin-top: 80px			
+				
+	.tabbed > label:hover, .tabbed > input:checked + label
+		background: #333
+		opacity: .9
+	#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+	#tab-nav-2:checked ~ .tabs > div:nth-of-type(2)
+		transform: rotateX(0deg)
+		opacity: 1
+		z-index: 1
+
+.gallery
+	min-height: 490px
+	text-align: center
+	.wrapper
+		display: inline-block
+		margin: 0
+		padding: 0
+		img
+			margin-top: 164px
+			cursor: pointer
+			width: 250px
+			+bs(0 0 16px rgba(0,0,0,.39))
+			+transition(all .6s)
+			margin-left: 8px
+
+			&:hover
+				+transform(scale(1.1))
+				z-index: 1
+		p
+			margin-top: 5px
+
+.reservetion
+	background-image: url(../img/bg-reservetion.jpg)
+	+cover
+	height: 589px
+	text-align: center
+	position: relative
+	h2
+		font-family: "GothamProBlack"
+		font-size: 32px
+		letter-spacing: 2px
+		text-transform: uppercase
+		color: #fff
+		margin-top: 60px
+		+ts(5px 4px 10px rgba(0,0,0,.34))
+		margin-bottom: 50px
+	input
+		display: block
+		margin: 0 auto
+		width: 290px
+		margin: 10px auto
+		padding: 25px
+	p
+		font-family: "GothamProLight"
+		font-size: 13px
+		color: #fff
+
+.reservetion-button
+	@extend .button-bottom
+	i
+		color: #000
+		font-size: 54px
+		text-indent: 5px
+		margin-top: 15px
+		font-weight: 100
+
+input:focus
+	+bs(0 0 5px 5px rgba(142, 74, 147, 0.6))
+
+input[type=text]
+	font-family: "GothamProLight"
+	font-size: 20px
+	// text-align: left
+	width: 400px
+	border-radius: 4px
+	border: #ccc 1px solid
+	padding: 12px 10px
+	text-indent: 25px
+	+br(25px)
+	border: 1px solid #584661
+	background-color: rgba(120,96,130,.85)
+	color: #fff
+	margin-top: 20px
+
+
+input[type=submit]
+	margin-top: 6px
+	text-decoration: none !important
+	font-family: "GothamProMedium"
+	font-size: 24px
+	color: #fff
+	letter-spacing: 1px
+	padding: 8px 60px 8px 60px
+	width: 400px
+	background-color: #ffc200
+	+br(30px)
+	+bs(2px 0 6px rgba(0,0,0,.45))
+	+ts(2px 2px 6px rgba(0,0,0,.35))
+	&:visited
+		color: #fff
+	&:hover
+		background-color: #feca25
+		+bs(0 4px 0 #c78800)
+		border: 2px solid #c78800
+	&:active
+		+bs(inset 0 1.5px 0 #aa7400)
+		border: 2px solid #dc9701
+
+
+.our-clients
+	min-height: 830px
+	position: relative
+	background-color: #fff
+	h2
+		font-family: "GothamProBlack"
+		+ts(-1px 1px 1px #969799)
+		text-align: center
+		font-size: 32px
+		letter-spacing: 1.2px
+		color: #31343a
+		margin-top: 150px
+
+.tabs-clients
+	.tabbed
+		width: 100%
+		margin-top: -10px
+		position: relative
+		>input
+			display: none
+		>label
+			position: absolute
+			left: 50%
+			margin-left: -25px
+			top: 8px
+			color: #737373
+			padding: 4px 4px
+			cursor: pointer
+			+br(5px)
+			transition: background-color 0.3s 
+			z-index: 1
+		label + input + label
+			position: absolute
+			left: 50%
+			margin-left: 25px
+			top: 8px
+			color: #737373
+			padding: 4px 4px
+			cursor: pointer
+			+br(5px)
+			transition: background-color 0.3s 
+			z-index: 1
+	.tabs
+		clear: both
+		+perspective(1000px)
+		display: block
+		text-align: center
+		>div 
+			position: absolute
+			opacity: 0
+			width: 100%
+			transform: rotateX(-20deg)
+			transform-origin: top center
+			transition: opacity 0.3s, transform 1s
+			opacity: 0
+			
+			.clients-wrapper
+				float: left
+				text-align: center
+				display: inline-block
+				max-width: 530px
+				margin-left: 20px
+				clear: both
+			img
+				float: left
+				margin-top: 50px
+			h3
+				font-family: "GothamProItalic"
+				font-size: 20px
+				margin-left: 200px
+				margin-top: 90px
+				color: #31343a
+				text-align: left
+
+			p
+				margin-top: 55px
+				font-size: 20px
+				color: #31343a
+				text-align: left
+	.tabbed > label:hover, .tabbed > input:checked + label
+		background: #333
+		background: -webkit-linear-gradient(top, #393939 0%,#3c3c3c 48%,#363636 52%,#333 100%)
+	#clinets-nav-1:checked ~ .tabs > div:nth-of-type(1),
+	#clinets-nav-2:checked ~ .tabs > div:nth-of-type(2)
+		transform: rotateX(0deg)
+		opacity: 1
+		z-index: 1
+
+.company
+	min-height: 200px
+	background-color: #efeded
+	position: relative
+	.gallery
+		min-height: 150px
+	h3
+		font-family: "GothamProBold"
+		font-size: 24px
+		color: #31343a
+		text-align: center
+		margin-top: 30px
+		margin-bottom: 20px
+	img
+		padding-left: 25px
+
+	
+.take-book
+	background-image: url(../img/take-book.jpg)
+	+cover
+	min-height: 877px
+	text-align: center
+	h2
+		font-family: "GothamProBold"
+		font-size: 26px
+		color: #31343a
+		text-transform: uppercase
+		margin-top: 75px
+	h3
+		font-size: 22px
+		color: #31343a
+		margin-top: 14px
+	section
+		margin-top: 20px
+		margin-bottom: 35px
+		img
+			display: inline-block
+			margin-left: 90px
+			margin-right: 70px
+	input
+		display: block
+		margin: 12px auto
+
+footer
+	background-image: url(../img/BG_footer.jpg)
+	min-height: 200px
+	+cover
+	text-align: center
+	display: block
+	.col-md-3
+		&:nth-of-type(2)
+			.wrapper
+				width: 280px
+				i
+					float: left
+
+	.wrapper
+		display: inline-block
+		margin-top: 60px
+		img
+			margin-top: -15px
+		i
+			color: #fff
+			font-size: 50px
+		h3
+			font-size: 22px
+			margin-top: 0px
+			color: #fff
+		a
+			font-size: 24px
+			text-decoration: none !important
+			color: #fff
+
+	.soc-icon
+		display: inline-block
+		margin-top: 70px
+		width: 40px
+		height: 40px
+		font-size: 20px
+		background-color: #000
+		cursor: pointer
+		+transition(all .4s)
+		&:nth-of-type(1)
+			background-color: #404aa7
+			&:hover
+				background-color: #6270ee
+		&:nth-of-type(2)
+			margin-left: 10px
+			background-color: #556ae4
+			&:hover
+				background-color: #92bffc
+		&:nth-of-type(3)
+			margin-left: 10px
+			background-color: #9548b6
+			&:hover
+				background-color: #b95de0
+		&:nth-of-type(4)
+			margin-left: 10px
+			background-color: #ba451e
+			&:hover
+				background-color: #f45a27
+		i
+			color: #fff
+			font-size: 26px
+			margin-top: 8px
+	section
+		text-align: center
+		display: block
+		margin-top: 50px
+		h4
+			display: inline-block
+			font-size: 18px
+			color: #181818
+			margin-left: 90px
+			border-bottom: 1px solid #785794
+			text-align: center
+			&:nth-of-type(1)
+				margin-left: 0
+
++r(1200)
+	header
+		section
+			&:after
+				display: none
+	.master-class
+		h2
+			font-size: 26px
+			margin-top: 60px
+		.num-item
+			width: 300px
+			p
+				font-size: 16px
+		.border-section
+			h3
+				font-size: 18px
+		section
+			margin-top: 50px
+			h3
+				font-size: 18px
+
+	.tabs-trainer
+		.tabs
+			>div 
+				section
+					position: relative
+					max-width: 60%
+					float: left	
+					margin-left: 20px
+					&:after	
+						left: -20px
+						width: 4px
+						height: 300px
+					h3
+						font-size: 16px
+
+				img
+					float: left
+					margin-top: 80px
+					max-width: 350px	
+	.gallery
+		min-height: 300px
+		text-align: center
+		.wrapper
+			img
+				margin-top: 100px
+				width: 180px
+			p
+				margin-top: 5px
+	.our-clients
+		h2
+			text-align: center
+			font-size: 32px
+
+	.tabs-clients
+		.tabs
+			>div 	
+				.clients-wrapper
+					max-width: 450px
+	
++r(992)
+	.master-class
+		.border-section
+			display: none
+		section
+			display: none
+
+	.tabs-trainer
+		.tabs
+			>div
+				section
+					h3
+						&:nth-of-type(7)
+							display: none
+				img
+					max-width: 240px	
+	.gallery
+		min-height: 300px
+		padding-top: 30px
+		padding-bottom: 20px
+		.wrapper
+			width: 300px
+			img
+				margin-top: 20px
+				width: 280px
+	.tabs-clients
+		.tabs
+			>div 
+				.clients-wrapper
+					max-width: 90%
+	.company
+		margin-top: 150px
+
+	.take-book
+		section
+			img
+				margin-left: 0
+				margin-right: 0
+
++r(768)
+	header
+		article 
+			margin-top: 60px
+			max-width: 792px
+			margin-left: 0px
+			text-align: center
+			h2
+				font-family: "GothamProBlack"
+				letter-spacing: 2.2px
+				font-size: 36px
+				color: #fff
+			h3
+				font-family: "GothamProBlack"
+				letter-spacing: 1.1px
+				font-size: 20px
+				color: #fff
+				margin-bottom: 30px
+			h4
+				font-family: "GothamProMedium"
+				font-size: 20px
+				color: #fdad00
+				letter-spacing: 1.5px
+				margin-bottom: 14px
+			h3+h4
+				font-family: "GothamProMedium"
+				font-size: 20px
+				color: #fdad00
+	.button-header
+		text-align: center
+		a
+			display: inline-block
+	
+	.trainer
+		h2
+			padding-top: 75px
+	.tabs-trainer
+		.tabbed
+			>input
+				display: none
+			>label
+				display: none
+			label + input + label
+				display: none
+		.tabs
+			>div 
+				position: relative
+				display: block		
+				section
+					max-width: 95%
+					float: none
+					text-align: left
+					margin-top: 70px
+					margin-left: 10px
+					&:after
+						display: none
+					h3
+						font-size: 18px
+						line-height: 30px
+						letter-spacing: 1.2px
+						border-bottom: 1px dashed #a4a4a4
+						padding-top: 10px
+						padding-bottom: 10px
+						text-indent: 15px
+						&:nth-of-type(1)
+							padding-top: 0px
+						&:nth-of-type(7)
+							border: none
+				img
+					display: none
+			div + div
+				display: none
+	.reservetion
+		h2
+			font-size: 26px
+			letter-spacing: 1.5px
+
+
+	input[type=submit]
+		margin-top: 6px
+		text-decoration: none !important
+		font-family: "GothamProMedium"
+		font-size: 20px
+		color: #fff
+		letter-spacing: 1px
+		padding: 10px 30px 10px 30px
+
+	.tabs-clients
+		.tabbed
+			>input
+				display: none
+			>label
+				display: none
+			label + input + label
+				display: none
+		.tabs
+			>div
+				position: relative
+				.clients-wrapper
+					margin-left: 0
+					margin-bottom: 40px
+			>div + div
+				display: none
+	.company
+		margin-top: 0
+	footer
+		section
+			margin-top: 30px
+			h4
+				margin-left: 0
+				border: none
+
++r(600)
+	.trainer
+		min-height: 650px
+
+		h2
+			padding-top: 50px
+	.tabs-trainer
+		.tabs
+			>div
+				margin-top: -40px	
+				section
+					h3
+						&:nth-of-type(4)
+							display: none
+						&:nth-of-type(5)
+							display: none
+						&:nth-of-type(6)
+							border: none
+						&:nth-of-type(7)
+							display: none
+				img
+					display: none
+	.company
+		margin-top: 0
+		img
+			margin-bottom: 20px
+		
+	
++r(480)
+	header
+		section
+			margin-top: 20px
+			padding: 15px
+	.button-header
+		margin-top: 50px
+		a
+			font-size: 18px
+			letter-spacing: 1.5px
+			padding: 10px 30px 10px 30px
+	.button-bottom
+		height: 60px
+		width: 60px
+		margin-left: -30px //60:2
+		
+		i
+			font-size: 30px
+			text-indent: 22px
+
+	.master-class
+		h2
+			font-size: 23px
+			border-bottom: 1px dashed #eee
+			padding-bottom: 20px
+		.border-section
+			display: none
+		section
+			display: none
+		.num-item
+			// float: none
+			text-align: center
+			width: 250px
+			min-height: 20px
+			span
+				display: inline-block
+			p
+				text-align: center
+	.masterClass-button
+		i
+			font-size: 30px
+			text-indent: 5px
+	.reservetion-button
+		i
+			font-size: 30px
+			text-indent: 5px
+
+	.reservetion
+		h2
+			font-size: 22px
+			letter-spacing: 1.5px
+			margin-bottom: 20px
+		input
+			width: 290px
+
+	.our-clients
+		h2
+			margin-top: 60px
+			border-bottom: 1px dashed #000
+	.tabs-clients
+		.tabs
+			>div 
+				.clients-wrapper
+					margin-left: 0
+					width: 300px
+					float: none
+				img
+					float: none
+					+transform(scale(0.8))
+				h3
+					font-size: 17px
+					margin-left: 0
+					margin-top: 0px
+					color: #31343a
+					text-align: center
+					border-bottom: 1px dashed #eee
+					padding-bottom: 20px
+
+				p
+					margin-top: 20px
+					font-size: 16px
+					text-align: center
+
+	.take-book
+		h2
+			font-size: 22px
+
+			margin-top: 55px
+		h3
+			font-size: 20px
+		section
+			margin-top: 20px
+			margin-bottom: 0
+			img
+				+transform(scale(.8))
+		input
+			width: 290px
+		p
+			padding-bottom: 25px
+
++rmob(1400)
+	.tabs-trainer
+		.tabs
+			>div 
+				margin-left: 10%
+				
+				section
+					max-width: 800px
+				img
+					float: left
+					margin-top: 80px	
+	.gallery
+		// min-height: 300px
+		// text-align: center
+		// padding-top: 30px
+		// padding-bottom: 20px
+		// .wrapper
+		// 	width: 18%
+		// 	margin-left: 10px
+		// 	img
+		// 		margin-top: 20px
+		// 		width: 450px
+		// 	p
+		// 		margin-top: 5px
+		
++rmob(2000)
+	.tabs-trainer
+		.tabs
+			>div 
+				margin-left: 20%
+	.gallery
+		min-height: 300px
+		text-align: center
+		padding-top: 30px
+		padding-bottom: 20px
+		.wrapper
+			width: 18%
+			margin-left: 15px
+			img
+				margin-top: 20px
+				width: 390px
+			p
+				margin-top: 5px
+		
